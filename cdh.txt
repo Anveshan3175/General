@@ -1,0 +1,23 @@
+To install CDH 5.8, download it from the website,get the oracle virtual machine player.
+Launch VM player, then do :“File -> Import Appliance” menu inside VirtualBox to open your downloaded *.ovf file, or simply double-click on 
+the file itself and VirtualBox should handle it from there.
+
+  AddressManager Node  10.0.2.15
+  Worker Node 1  10.0.2.15
+  
+  http://quickstart.cloudera:7180
+  Username: cloudera
+  Password: cloudera
+
+Commands:
+uname -a  : To display os used
+hadoop version : Hadoop 2.6.0-cdh5.8.0
+spark-shell --version : 1.6.0
+flume-ng version : Flume 1.6.0-cdh5.8.0
+impala-shell : 2.6.0-cdh5.8.0
+avro-tools :
+
+
+
+Links:
+  http://www.cloudera.com/documentation/enterprise/latest/topics/introduction.html
