@@ -230,6 +230,12 @@ mysql shell
 /usr/bin/mysql -u root -p
 anvesh
 
+GIT
+NOtes:
+sudo apt-get install git
+
+git config --global user.name "Anveshan3175"
+git config --global user.email "akunduru4@gmail.com"
 
 
 
