@@ -163,6 +163,10 @@ In another terminal :
 hadoop fs -cat spark/opSpark/part-00000
 --Simple spark command to see if file exists or not
 sc.textFile("/home/anveshan/spark/ip.txt").take(5).foreach(println)
+sc.textFile("hdfs://localhost:9000/user/hduser/spark/ip.txt").take(5).foreach(println)
+
+--> To run in yarn:
+spark-shell --master yarn-client
 
 ==================================================================
 Running SPARK PROGRAM via SBT
