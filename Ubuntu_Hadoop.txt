@@ -215,6 +215,13 @@ val sampleFile = sc.textFile("sample.txt")
 val linesWithSample = sampleFile.filter(line => line.contains("sample"))
 linesWithSample.count()
 
+Spark with hadoop word count :
+spark-shell
+val hadoopText = sc.textFile("hdfs://localhost:9000/user/hduser/spark/ip.txt")
+val counts = hadoopText.flatMap(line => line.split(" ")).map(word => (word,1)).reduceByKey(_ + _)
+counts.saveAsTextFile("hdfs://localhost:9000/user/hduser/spark/opSpark")
+In another terminal :
+hadoop fs -cat spark/opSpark/part-00000
 
 ============================================
 Mysql set up
