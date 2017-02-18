@@ -79,6 +79,7 @@ http://localhost:8088/cluster resource manager
 http://localhost:50070/dfshealth.html#tab-overview Name node
 http://localhost:50070/logs/  logs
 http://localhost:50070/logs/userlogs/  (check the application from the console)
+hdfs fsck spark/opSpark/part-00001 -files -blocks -locations
 
 8)Running a map reduce :
 •If we are creating a executable jar, then we don’t have to mention class name
