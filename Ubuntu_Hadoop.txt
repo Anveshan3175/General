@@ -51,11 +51,7 @@ Jps
 2648 NameNode
 3019 SecondaryNameNode
 
-7)Install  virtual box
-http://tecadmin.net/install-oracle-virtualbox-on-ubuntu/
-Virtualbox
-
-Hadoop commands:
+Hadoop commands and Notes:
 Login to hduser for connecting to hadoop
 Sudo su hduser  (hduser)
 hduser@anveshan-All-Series:/usr/local/hadoop/sbin$ ./start-all.sh
@@ -80,11 +76,19 @@ http://localhost:50070/dfshealth.html#tab-overview Name node
 http://localhost:50070/logs/  logs
 http://localhost:50070/logs/userlogs/  (check the application from the console)
 hdfs fsck spark/opSpark/part-00001 -files -blocks -locations
+-> We can find all config files under /etc/hadoop/conf/  
+   In my system it is /usr/local/hadoop/etc/hadoop/
+-> NameNode IP address can be found from "Core-site.xml" with property fs.defaultFS
 
-8)Running a map reduce :
+
+7)Running a map reduce :
 •If we are creating a executable jar, then we don’t have to mention class name
 /home/anveshan$ hadoop jar /home/anveshan/hdpl/progs/wc1.jar mrprogs/wc1/ip mrprogs/wc1/op1
 hadoop fs -cat /user/hduser/mrprogs/wordCount/op_cins/part-r-00000
+
+8)Install  virtual box
+http://tecadmin.net/install-oracle-virtualbox-on-ubuntu/
+Virtualbox
 
 Install Spark :
 https://spark.apache.org/downloads.html
