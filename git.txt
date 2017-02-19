@@ -8,3 +8,7 @@ CLONE REPOSITORY INTO ECLIPSE
 6. Finish
 7. Open Java perspective in the eclipse.(If the project is Java project)
 8. File -> Import -> Git -> Projects from GIT ->  Existing local repository -> select the java project from local repository -> Select the project Name -> Finish import.
+9. To update changes from GIT repo, use pull request.
+10. To commit changes from local eclipse to GIT repository,
+    select Project -> Team -> commit -> Go to GIT staging window -> Commit and Push
+11. If there is any issue while pushing, revert local changes, take update gtom repo, make changes and then push again.
