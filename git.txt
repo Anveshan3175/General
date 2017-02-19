@@ -1,0 +1,8 @@
+CLONE REPOSITORY INTO ECLIPSE
+
+1. Open GIT perspective in eclipse
+2. GIT repositories tab
+3. Click on "Clone a GIT repositry and add the clone to this view
+4. In "Select Repository Source" window, select "Clone URL"
+5. Give credentials and clone URL copied from GIT website
+6. Finish
