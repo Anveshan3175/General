@@ -6,3 +6,5 @@ CLONE REPOSITORY INTO ECLIPSE
 4. In "Select Repository Source" window, select "Clone URL"
 5. Give credentials and clone URL copied from GIT website
 6. Finish
+7. Open Java perspective in the eclipse.(If the project is Java project)
+8. File -> Import -> Git -> Projects from GIT ->  Existing local repository -> select the java project from local repository -> Select the project Name -> Finish import.
