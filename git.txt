@@ -12,3 +12,16 @@ CLONE REPOSITORY INTO ECLIPSE
 10. To commit changes from local eclipse to GIT repository,
     select Project -> Team -> commit -> Go to GIT staging window -> Commit and Push
 11. If there is any issue while pushing, revert local changes, take update gtom repo, make changes and then push again.
+
+
+Another way
+1. Create New repository in the GIT HUB.
+2. Open GIT perspective in eclipse
+3. GIT repositories tab
+4. Click on "Clone a GIT repositry and add the clone to this view
+5. In "Select Repository Source" window, select "Clone URL"
+6. Give credentials and clone URL copied from GIT website
+7. Finish
+8. Create Java project in the eclipse
+9. Select the Java Project and right click and share project
+10. Select the repository and finish it.
