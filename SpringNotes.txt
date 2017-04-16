@@ -1,1 +1,28 @@
-Root WebApplicationContext : The root WebApplicationContext is created by the ContextLoader and contains all the beans defined in the configuration files referenced by "contextConfigLocation" CONTEXT parameter  (unless you provide an explicit alternative, this means WEB-INF/applicationContext.xml).
+1.WebApplicationContext : 
+    Each DispatcherServlet has its own WebApplicationContext (which extends the global context). It        is referenced by  "contextConfigLocation" init parameter in servlet tag.Spring encourages encapsulation: beans that are "general purpose" and shared between multiple DispatcherServlets should live in the global context, where as beans that are only interacted with by your DispatcherServlet aren't shared. 
+
+2. Root WebApplicationContext : 
+    The root WebApplicationContext is created by the ContextLoader and contains all the beans defined in the configuration files referenced by "contextConfigLocation" CONTEXT parameter  (unless you provide an explicit alternative, this means WEB-INF/applicationContext.xml).
+    
+   --> To create and initialize the root Web Application Context, we specify Spring’s ContextLoaderListener class in our web.xml file. The ContextLoaderListener’s <listener> element should be specified after the Log4jConfigListener’s <listener> element in your web.xml file if you have a Log4jConfigListener.
+    
+3. Standalone Spring application typically utilizes the ApplicationContext interface that gives us access to the beans in the Spring IoC container and also includes other functionality.
+
+4. A Spring web application usually utilizes the WebApplicationContext interface that extends the ApplicationContext interface.Like a standard ApplicationContext, we can use a WebApplicationContext to retrieve beans from a Spring container.
+
+5. When using XML configuration files in a Spring web application, the actual WebApplicationContext implementation class is the XmlWebApplicationContext class.
+
+6.  Root 
+    Web Application Context  -----> Services,DAO
+    
+    Displatcher Servlet 
+    Web Application COntext  -----> Controllers
+   
+ 7. DispatcherServlet and the ContextLoaderListener both take contextConfigLocation values. However, in the case of the ContextLoaderListener, this is a <context-param>, whereas in the case of the DispatcherServlet, this is an <init-param>.
+    
+    
+    
+
+References :
+http://www.deroneriksson.com/tutorials/java/spring/introduction-to-the-spring-framework/configuring-root-web-application-context-in-spring-web-application
+    
