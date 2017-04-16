@@ -1,1 +1,1 @@
-Root WebApplicationContext :
+Root WebApplicationContext : The root WebApplicationContext is created by the ContextLoader and contains all the beans defined in the configuration files referenced by "contextConfigLocation" CONTEXT parameter  (unless you provide an explicit alternative, this means WEB-INF/applicationContext.xml).
