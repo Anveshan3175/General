@@ -19,6 +19,7 @@
     Web Application COntext  -----> Controllers
    
  7. DispatcherServlet and the ContextLoaderListener both take contextConfigLocation values. However, in the case of the ContextLoaderListener, this is a <context-param>, whereas in the case of the DispatcherServlet, this is an <init-param>.
+    -> Context Loader Listener will create only one (web) application context from multiple files in the web application.
     
     
     
