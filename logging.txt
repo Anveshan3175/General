@@ -8,4 +8,10 @@
    It assumes that levels are ordered. For the standard levels, we have 
    ALL < DEBUG < INFO < WARN < ERROR < FATAL < OFF. 
    
--> 
+-> In the log4j.properties, if "log4j.rootLogger" is mentioned as "INFO" then all the statements "logger.info",   "logger.warn", .....excluding "logger.info" will be executed and logged. Similarly, if "log4j.rootLogger" is mentioned as "ERROR", then "logger.info","logger.debug","logger.warn" will be excluded.
+
+-> The guard statement (checking isDebugEnabled()) is there to prevent potentially expensive computation of the log message when it involves invocation of the toString() methods of various objects and concatenating the results.
+"THE EXPENSIVE OPERATION HERE IS STRING CONCATENATION." Even before Concatenation is invoked, we need to check if debug is enabled or not, so that "concat" operation is performed or avoided.
+    However in more advanced log frameworks like slf4g, it is automatic i.e., only if logging is enabled, then only string concatenations in the log statements will be done.In log4j, we need to use if block.
+    In log4j,if there is no string contactination, then there is no performance improvement, if isDebugEnabled() is user or not.
+    The cost of invoking isDebugEnabled() is in the order of 5 to 30 nanoseconds which should be negligible for most practical purposes
