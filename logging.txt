@@ -1,0 +1,11 @@
+-> To integrate log4j, all you need to do is :
+
+    1. Puts the log4j.jar in the project classpath.
+    2. Create a log4j.properties or log4j.xml file in the project root classpath 
+       (if you follow the Maven standard directory structure, this should be the resources folder).
+  
+-> A log request of level p in a logger with level q is enabled if p >= q. This rule is at the heart of log4j. 
+   It assumes that levels are ordered. For the standard levels, we have 
+   ALL < DEBUG < INFO < WARN < ERROR < FATAL < OFF. 
+   
+-> 
