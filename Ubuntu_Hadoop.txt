@@ -257,6 +257,16 @@ sudo apt-get install git
 git config --global user.name "Anveshan3175"
 git config --global user.email "akunduru4@gmail.com"
 
-
-
+Install Python in Anaconda ubuntu
+============================================
+1. https://www.continuum.io/downloads
+2. Download the installable in the downloads folder
+3. Run this command : bash ~/Downloads/Anaconda3-4.3.1-Linux-x86_64.sh
+4. Agree the license
+5. Give the installation folder as default (just click enter when it is asked)
+6. Accept appending version number
+7. Launch : spyder
+8. python --version
+9. launch notebook : jupyter notebook
+10. exit notebook : ctrl c
 
