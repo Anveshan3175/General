@@ -27,3 +27,11 @@ Another way
 10. Select the repository and finish it.
 
 Ref : https://www.youtube.com/watch?v=cdsMIX9gB94
+
+
+Add second project to existing repository
+1. Create a project in the eclipse
+2. Right click on the project and click on share the project
+3. Select existing repository in the local machine.
+4. Right click the project, in the Team option, click on commit.
+5. Give credentials to complete the process.
