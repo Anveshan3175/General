@@ -269,4 +269,5 @@ Install Python in Anaconda ubuntu
 8. python --version
 9. launch notebook : jupyter notebook
 10. exit notebook : ctrl c
+11. ctrl + i to see documentation
 
