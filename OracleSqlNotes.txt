@@ -1,1 +1,58 @@
+Unlock HR schema
+=================
+conn / as sysdba;
+alter user hr identified by hr account unlock;conn fod/fusion;
 
+To see what users are there in current DB
+=========================================
+Open cmd
+sqlplus
+hr
+hr
+
+1) To view database select * from v$database; 
+2) To view instance select * from v$instance;
+3) To view all users select * from all_users;select tablespace_name, table_name from user_tables;
+4) To view table and columns for a particular user select tc.table_name Table_name,tc.column_id Column_id,lower(tc.column_name) Column_name,lower(tc.data_type) Data_type,nvl(tc.data_precision,tc.data_length) Length,lower(tc.data_scale) Data_scale,tc.nullable nullableFROM all_tab_columns tc,all_tables tWHERE tc.table_name = t.table_name;
+
+
+
+
+Create New Schema :
+===================
+Login as system/system/localhost/1521/xe
+In oracle user or schema is same. You can create one with Admin login.conn / as sysdba;
+1) create user adf identified by 1234; (create new user/schema with name as adf and password as 1234)2) select username from dba_users;  (Check if new user is appearing )3) grant create session to adf; (give grant for session other wise you cannot login)4) You can login now. This completes a simple  usrr/schema creation5) create tablespace anv_tabspace  datafile 'adf_tabspace.dat'  size 10M autoextend on;  (to keep things tidy create your own table space)6) select tablespace_name from dba_tablespaces;  (Check you newly created table spaces)7) create temporary tablespace adf_tabspace_temp  tempfile 'adf_tabspace_temp.dat'  size 5M autoextend on;8) grant create session to adf;9) grant create table to adf;10)grant unlimited tablespace to adf;
+
+
+http://stackoverflow.com/questions/18403125/how-to-create-a-new-schema-new-user-in-oracle-11g
+
+====
+ CREATE TABLE "EMPLOYEES"    ( "EMPLOYEE_ID" NUMBER(6,0) primary key,       "FIRST_NAME" VARCHAR2(20 BYTE),       "LAST_NAME" VARCHAR2(25 BYTE),        "EMAIL" VARCHAR2(25 BYTE),      "PHONE_NUMBER" VARCHAR2(20 BYTE),       "JOB_ID" VARCHAR2(10 BYTE),      "SALARY" NUMBER(8,2),       "MANAGER_ID" NUMBER(6,0),       "DEPARTMENT_ID" NUMBER(4,0));
+Insert into employees (EMPLOYEE_ID,FIRST_NAME,LAST_NAME,EMAIL,PHONE_NUMBER,JOB_ID,SALARY,MANAGER_ID,DEPARTMENT_ID) values 
+(100,'Steven','King','SKING','515.123.4567','AD_PRES',50000,null,90);Insert into employees (EMPLOYEE_ID,FIRST_NAME,LAST_NAME,EMAIL,PHONE_NUMBER,JOB_ID,SALARY,MANAGER_ID,DEPARTMENT_ID) values 
+(101,'Neena','Kochhar','NKOCHHAR','515.123.4568','AD_VP',17000,100,90);Insert into employees (EMPLOYEE_ID,FIRST_NAME,LAST_NAME,EMAIL,PHONE_NUMBER,JOB_ID,SALARY,MANAGER_ID,DEPARTMENT_ID) values (102,'Lex','De 
+Haan','LDEHAAN','515.123.4569','AD_VP',17000,100,90);Insert into employees (EMPLOYEE_ID,FIRST_NAME,LAST_NAME,EMAIL,PHONE_NUMBER,JOB_ID,SALARY,MANAGER_ID,DEPARTMENT_ID) values 
+(103,'Alexander','Hunold','AHUNOLD','590.423.4567','IT_PROG',9000,102,60);Insert into employees (EMPLOYEE_ID,FIRST_NAME,LAST_NAME,EMAIL,PHONE_NUMBER,JOB_ID,SALARY,MANAGER_ID,DEPARTMENT_ID) values 
+(104,'Bruce','Ernst','BERNST','590.423.4568','IT_PROG',6000,103,60);Insert into employees (EMPLOYEE_ID,FIRST_NAME,LAST_NAME,EMAIL,PHONE_NUMBER,JOB_ID,SALARY,MANAGER_ID,DEPARTMENT_ID) values 
+(105,'David','Austin','DAUSTIN','590.423.4569','IT_PROG',4800,103,60);Insert into employees (EMPLOYEE_ID,FIRST_NAME,LAST_NAME,EMAIL,PHONE_NUMBER,JOB_ID,SALARY,MANAGER_ID,DEPARTMENT_ID) values 
+(106,'Valli','Pataballa','VPATABAL','590.423.4560','IT_PROG',4800,103,60);Insert into employees (EMPLOYEE_ID,FIRST_NAME,LAST_NAME,EMAIL,PHONE_NUMBER,JOB_ID,SALARY,MANAGER_ID,DEPARTMENT_ID) values 
+(107,'Diana','Lorentz','DLORENTZ','590.423.5567','IT_PROG',4200,103,60);Insert into employees (EMPLOYEE_ID,FIRST_NAME,LAST_NAME,EMAIL,PHONE_NUMBER,JOB_ID,SALARY,MANAGER_ID,DEPARTMENT_ID) values 
+(108,'Nancy','Greenberg','NGREENBE','515.124.4569','FI_MGR',12008,101,100);Insert into employees (EMPLOYEE_ID,FIRST_NAME,LAST_NAME,EMAIL,PHONE_NUMBER,JOB_ID,SALARY,MANAGER_ID,DEPARTMENT_ID) values 
+(109,'Daniel','Faviet','DFAVIET','515.124.4169','FI_ACCOUNT',9000,108,100);Insert into employees (EMPLOYEE_ID,FIRST_NAME,LAST_NAME,EMAIL,PHONE_NUMBER,JOB_ID,SALARY,MANAGER_ID,DEPARTMENT_ID) values 
+(110,'John','Chen','JCHEN','515.124.4269','FI_ACCOUNT',8200,108,100);Insert into employees (EMPLOYEE_ID,FIRST_NAME,LAST_NAME,EMAIL,PHONE_NUMBER,JOB_ID,SALARY,MANAGER_ID,DEPARTMENT_ID) values 
+(111,'Ismael','Sciarra','ISCIARRA','515.124.4369','FI_ACCOUNT',7700,108,100);Insert into employees (EMPLOYEE_ID,FIRST_NAME,LAST_NAME,EMAIL,PHONE_NUMBER,JOB_ID,SALARY,MANAGER_ID,DEPARTMENT_ID) values (112,'Jose 
+Manuel','Urman','JMURMAN','515.124.4469','FI_ACCOUNT',7800,108,100);Insert into employees (EMPLOYEE_ID,FIRST_NAME,LAST_NAME,EMAIL,PHONE_NUMBER,JOB_ID,SALARY,MANAGER_ID,DEPARTMENT_ID) values 
+(113,'Luis','Popp','LPOPP','515.124.4567','FI_ACCOUNT',6900,108,100);Insert into employees (EMPLOYEE_ID,FIRST_NAME,LAST_NAME,EMAIL,PHONE_NUMBER,JOB_ID,SALARY,MANAGER_ID,DEPARTMENT_ID) values 
+(114,'Den','Raphaely','DRAPHEAL','515.127.4561','PU_MAN',11000,100,30);Insert into employees (EMPLOYEE_ID,FIRST_NAME,LAST_NAME,EMAIL,PHONE_NUMBER,JOB_ID,SALARY,MANAGER_ID,DEPARTMENT_ID) values 
+(115,'Alexander','Khoo','AKHOO','515.127.4562','PU_CLERK',3100,114,30);Insert into employees (EMPLOYEE_ID,FIRST_NAME,LAST_NAME,EMAIL,PHONE_NUMBER,JOB_ID,SALARY,MANAGER_ID,DEPARTMENT_ID) values 
+(116,'Shelli','Baida','SBAIDA','515.127.4563','PU_CLERK',2900,114,30);Insert into employees (EMPLOYEE_ID,FIRST_NAME,LAST_NAME,EMAIL,PHONE_NUMBER,JOB_ID,SALARY,MANAGER_ID,DEPARTMENT_ID) values 
+(117,'Sigal','Tobias','STOBIAS','515.127.4564','PU_CLERK',2800,114,30);Insert into employees (EMPLOYEE_ID,FIRST_NAME,LAST_NAME,EMAIL,PHONE_NUMBER,JOB_ID,SALARY,MANAGER_ID,DEPARTMENT_ID) values 
+(118,'Guy','Himuro','GHIMURO','515.127.4565','PU_CLERK',2600,114,30);Insert into employees (EMPLOYEE_ID,FIRST_NAME,LAST_NAME,EMAIL,PHONE_NUMBER,JOB_ID,SALARY,MANAGER_ID,DEPARTMENT_ID) values 
+(119,'Karen','Colmenares','KCOLMENA','515.127.4566','PU_CLERK',2500,114,30); 
+commit;
+Notes :we created an user who's objects are stored in the database default tablespace. To have database tidy we should place users objects to his own space 
+(tablespace is an allocation of space in the database that can contain schema objects)
+Create temporary tablespace (Temporaty tablespace is an allocation of space in the database that can contain transient data that persists only for the 
+duration of a session. This transient data cannot be recovered after process or instance failure.):
+++++++++++++++++++++++++++++++++++++++++++++++++password expired :conn / as sysdba;ALTER USER user_name IDENTIFIED BY password;ALTER 
