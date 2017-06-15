@@ -21,7 +21,7 @@ hr
 Create New Schema :
 ===================
 Login as system/system/localhost/1521/xe
-In oracle user or schema is same. You can create one with Admin login : conn / as sysdba;
+In oracle, user or schema is same. You can create one with Admin login : conn / as sysdba;
 
 1) create user adf identified by 1234; (create new user/schema with name as adf and password as 1234)
 2) select username from dba_users;  (Check if new user is appearing )
