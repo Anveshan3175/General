@@ -23,16 +23,27 @@ Create New Schema :
 Login as system/system/localhost/1521/xe
 In oracle, user or schema is same. You can create one with Admin login : conn / as sysdba;
 
-1) create user adf identified by 1234; (create new user/schema with name as adf and password as 1234)
+1) create user hib identified by hib; (create new user/schema with name as hib and password as hib)
 2) select username from dba_users;  (Check if new user is appearing )
-3) grant create session to adf; (give grant for session other wise you cannot login)
-4) You can login now. This completes a simple  usrr/schema creation
-5) create tablespace anv_tabspace  datafile 'adf_tabspace.dat'  size 10M autoextend on;  (to keep things tidy create your own table space)
+3) grant create session to hib; (give grant for session other wise you cannot login)
+4) You can login now in seperate connection and test this. This completes a simple  usrr/schema creation
+5) Continuing as admin user, 
+create tablespace hib_tablespace  datafile 'hib_tablespace.dat'  size 10M autoextend on;  (to keep things tidy create your own table space)
 6) select tablespace_name from dba_tablespaces;  (Check you newly created table spaces)
-7) create temporary tablespace adf_tabspace_temp  tempfile 'adf_tabspace_temp.dat'  size 5M autoextend on;
-8) grant create session to adf;
-9) grant create table to adf;
-10)grant unlimited tablespace to adf;
+7) create temporary tablespace hib_tablespace_temp  tempfile 'adf_tablespace_temp.dat'  size 5M autoextend on;
+8) grant create session to hib;
+9) grant create table to hib;
+10)grant unlimited tablespace to hib;
+11)GRANT create view TO hib;
+12)GRANT create any trigger TO hib;
+13)GRANT create any procedure TO hib;
+14)GRANT create sequence TO hib;
+15)GRANT create synonym TO hib;
+16) Create objects like tables(emp) and create synoymns for them.
+If synonymns are there, even if you are querying for hib db objects, you don't need to use prefix "hib".
+
+CREATE PUBLIC SYNONYM emp FOR hib.suppliers;
+
 
 
 http://stackoverflow.com/questions/18403125/how-to-create-a-new-schema-new-user-in-oracle-11g
