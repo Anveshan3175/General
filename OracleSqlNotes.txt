@@ -21,13 +21,23 @@ hr
 Create New Schema :
 ===================
 Login as system/system/localhost/1521/xe
-In oracle user or schema is same. You can create one with Admin login.conn / as sysdba;
-1) create user adf identified by 1234; (create new user/schema with name as adf and password as 1234)2) select username from dba_users;  (Check if new user is appearing )3) grant create session to adf; (give grant for session other wise you cannot login)4) You can login now. This completes a simple  usrr/schema creation5) create tablespace anv_tabspace  datafile 'adf_tabspace.dat'  size 10M autoextend on;  (to keep things tidy create your own table space)6) select tablespace_name from dba_tablespaces;  (Check you newly created table spaces)7) create temporary tablespace adf_tabspace_temp  tempfile 'adf_tabspace_temp.dat'  size 5M autoextend on;8) grant create session to adf;9) grant create table to adf;10)grant unlimited tablespace to adf;
+In oracle user or schema is same. You can create one with Admin login : conn / as sysdba;
+
+1) create user adf identified by 1234; (create new user/schema with name as adf and password as 1234)
+2) select username from dba_users;  (Check if new user is appearing )
+3) grant create session to adf; (give grant for session other wise you cannot login)
+4) You can login now. This completes a simple  usrr/schema creation
+5) create tablespace anv_tabspace  datafile 'adf_tabspace.dat'  size 10M autoextend on;  (to keep things tidy create your own table space)
+6) select tablespace_name from dba_tablespaces;  (Check you newly created table spaces)
+7) create temporary tablespace adf_tabspace_temp  tempfile 'adf_tabspace_temp.dat'  size 5M autoextend on;
+8) grant create session to adf;
+9) grant create table to adf;
+10)grant unlimited tablespace to adf;
 
 
 http://stackoverflow.com/questions/18403125/how-to-create-a-new-schema-new-user-in-oracle-11g
 
-====
+=======================================
  CREATE TABLE "EMPLOYEES"    ( "EMPLOYEE_ID" NUMBER(6,0) primary key,       "FIRST_NAME" VARCHAR2(20 BYTE),       "LAST_NAME" VARCHAR2(25 BYTE),        "EMAIL" VARCHAR2(25 BYTE),      "PHONE_NUMBER" VARCHAR2(20 BYTE),       "JOB_ID" VARCHAR2(10 BYTE),      "SALARY" NUMBER(8,2),       "MANAGER_ID" NUMBER(6,0),       "DEPARTMENT_ID" NUMBER(4,0));
 Insert into employees (EMPLOYEE_ID,FIRST_NAME,LAST_NAME,EMAIL,PHONE_NUMBER,JOB_ID,SALARY,MANAGER_ID,DEPARTMENT_ID) values 
 (100,'Steven','King','SKING','515.123.4567','AD_PRES',50000,null,90);Insert into employees (EMPLOYEE_ID,FIRST_NAME,LAST_NAME,EMAIL,PHONE_NUMBER,JOB_ID,SALARY,MANAGER_ID,DEPARTMENT_ID) values 
