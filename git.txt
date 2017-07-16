@@ -1,7 +1,35 @@
 User Name : Anveshan3175/Katrinakaif1
 
+**************************************************************************************
 https://www.siteground.com/tutorials/git/commands.htm
+Install Git with Apt :
+sudo apt-get update
+sudo apt-get install git
 
+Set Up Git:
+git config --global user.name "Your Name"
+git config --global user.email "youremail@domain.com"
+
+Searches related to how to install git on ubuntu
+how to install git on linux
+how to use git on ubuntu
+github
+setup git on ubuntu
+ubuntu git package
+setup git server ubuntu
+ubuntu git clone
+git-core
+Searches related to github on ubuntu
+mac os install git
+how to use github ubuntu
+how to setup github
+how to use github linux
+github generate keys
+git setup linux
+git install
+git bash
+
+**************************************************************************************
 CLONE REPOSITORY INTO ECLIPSE
 
 1. Open GIT perspective in eclipse
@@ -39,3 +67,5 @@ Add second project to existing repository
 3. Select existing repository in the local machine.
 4. Right click the project, in the Team option, click on commit.
 5. Give credentials to complete the process.
+
+**************************************************************************************
