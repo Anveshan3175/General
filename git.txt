@@ -43,6 +43,12 @@ Then do
 git pull
 Then make changes again
 and then make local changes and push it to origin
+
+Resolve conflicts
+1.Modify file after conflicts
+2.git add
+3.git commit -m "comments"
+4.git push -u origin master
 **************************************************************************************
 CLONE REPOSITORY INTO ECLIPSE
 
