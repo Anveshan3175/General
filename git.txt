@@ -36,7 +36,13 @@ github generate keys
 git setup linux
 git install
 git bash
-
+### If changes are made in remote repository and also in local repository, then you cannot merge local changes
+as they are. First you need to checkout file (be careful to take backup as changes will be lost)
+git checkout FirstFile.txt
+Then do 
+git pull
+Then make changes again
+and then make local changes and push it to origin
 **************************************************************************************
 CLONE REPOSITORY INTO ECLIPSE
 
