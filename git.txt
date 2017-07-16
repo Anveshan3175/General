@@ -9,6 +9,14 @@ sudo apt-get install git
 Set Up Git:
 git config --global user.name "Your Name"
 git config --global user.email "youremail@domain.com"
+Create a repository in the Github without readme.md, then you will see below commands
+    echo "# TestGIT" >> README.md
+    git init
+    git add README.md
+    git commit -m "first commit"
+    git remote add origin https://github.com/Anveshan3175/TestGIT.git
+    git push -u origin master
+
 
 Searches related to how to install git on ubuntu
 how to install git on linux
