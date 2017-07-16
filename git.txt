@@ -49,6 +49,8 @@ Resolve conflicts
 2.git add
 3.git commit -m "comments"
 4.git push -u origin master
+
+git reset --merge
 **************************************************************************************
 CLONE REPOSITORY INTO ECLIPSE
 
