@@ -51,6 +51,8 @@ Resolve conflicts
 4.git push -u origin master
 
 git reset --merge
+git rm --cached [file]   (remove file from staging)
+git reset HEAD <file>
 **************************************************************************************
 CLONE REPOSITORY INTO ECLIPSE
 
