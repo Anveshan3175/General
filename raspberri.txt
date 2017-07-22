@@ -1,1 +1,5 @@
 
+
+To see all devices connected to USB : lsusb
+
+http://garyhall.org.uk/raspberry-pi-internet-enabled-camera.html
