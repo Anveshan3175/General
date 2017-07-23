@@ -272,3 +272,12 @@ Install Python in Anaconda ubuntu
 11. ctrl + i to see documentation
 Beautiful Soup
 sudo apt-get install python3-bs4
+
+
+Install ubuntu on virtualbox
+=============================
+1)INstall virtualbox
+2)Download ubunti iso file
+3)Install it like in : https://www.youtube.com/watch?v=U2LrFJnSVWU
+
+To see full view mode, Right Ctrl + F (Control button on right hand + F)
