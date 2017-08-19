@@ -1,1 +1,9 @@
 
+To understand what "server push" means you must remember that the web operates in an event-driven way; the events can come from clients or servers. 
+
+In the normal Web client-server scenario, the browser asks the server for the web pages. This is called "pull", because the client "pulls" the data from the server. The events, in this case, come from the client.
+Sometimes it is necessary to have the server send data to the client; a typical case is that of stock data, which must change constantly on the web page to remain in sync with actual data, even if the client doesn't request it by clicking on a request button. This is called "push", because the server "pushes" the data to the client. The events, in this case, come from the server.
+[However, even with so-called server-push, the server cannot actually initiate a TCP connection to the client. Instead, the server leaves the initial connection open; after the first chunk of data (a whole page, or a partial page, or a single image) is sent, the client is then waiting around for the server to send the next piece of information.
+
+
+https://readlearncode.com/servlet-4-features/
