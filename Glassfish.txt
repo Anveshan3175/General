@@ -1,0 +1,31 @@
+D:\Software\latest-glassfish\glassfish5\glassfish\bin>startserv.bat
+http://localhost:4848/common/index.jsf
+D:\Software\latest-glassfish\glassfish5\glassfish\domains\domain1\config\domain.xml
+-- port 9090 9191
+
+
+enable debug in glassfish:
+http://localhost:4848/common/index.jsf
+configurations -> JVM Settings -> Debug enabled -> note debug port(9009)
+start server
+
+In eclipse
+run -> debug configurations -> Remote Java Application -> double click to create new
+Host : localhost
+port : 9009
+
+path:
+GLASSFISH_HOME
+D:\Software\latest-glassfish\glassfish5
+path : %GLASSFISH_HOME%\bin;
+
+in the cmd : asadmin start-domain
+asadmin stop-domain
+
+deploy application:
+1.Goto directory where war is there.
+2.asadmin start-domain domain1
+3.asadmin deploy j2ee8.war<war name>
+4.asadmin redeploy j2ee8.war<war name>
+5. When name is prompted, give the name for deployment
+  D:\Software\latest-glassfish\glassfish5\glassfish\domains\domain1\applications
