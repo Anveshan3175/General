@@ -1,10 +1,12 @@
 1.WebApplicationContext : 
-    Each DispatcherServlet has its own WebApplicationContext (which extends the global context). It        is referenced by  "contextConfigLocation" init parameter in servlet tag.Spring encourages encapsulation: beans that are "general purpose" and shared between multiple DispatcherServlets should live in the global context, where as beans that are only interacted with by your DispatcherServlet aren't shared. 
+    Each DispatcherServlet has its own WebApplicationContext (which extends the global context). It is referenced by  "contextConfigLocation" init parameter in servlet tag.Spring encourages encapsulation: beans that are "general purpose" and shared between multiple DispatcherServlets should live in the global context, where as beans that are only interacted with by your DispatcherServlet aren't shared. 
 
 2. Root WebApplicationContext : 
     The root WebApplicationContext is created by the ContextLoader and contains all the beans defined in the configuration files referenced by "contextConfigLocation" CONTEXT parameter  (unless you provide an explicit alternative, this means WEB-INF/applicationContext.xml).
     
    --> To create and initialize the root Web Application Context, we specify Spring’s ContextLoaderListener class in our web.xml file. The ContextLoaderListener’s <listener> element should be specified after the Log4jConfigListener’s <listener> element in your web.xml file if you have a Log4jConfigListener.
+   
+*** My understanding is that, Application Context in standalone Spring project == root Web Application Context in Spring MVC project 
     
 3. Standalone Spring application typically utilizes the ApplicationContext interface that gives us access to the beans in the Spring IoC container and also includes other functionality.
 
@@ -21,7 +23,7 @@
  7. DispatcherServlet and the ContextLoaderListener both take contextConfigLocation values. However, in the case of the ContextLoaderListener, this is a <context-param>, whereas in the case of the DispatcherServlet, this is an <init-param>.
     -> Context Loader Listener will create only one (web) application context from multiple files in the web application.
     
-    
+ 8. If you have a simple Spring MVC application, you could even have a situation where you don’t have a root WebApplicationContext. A DispatcherServlet would still have its own WebApplicationContext, but it doesn’t actually need to have a parent root WebApplicationContext
     
 
 References :
