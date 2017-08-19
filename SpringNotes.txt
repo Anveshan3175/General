@@ -39,4 +39,14 @@
 
 References :
 http://www.deroneriksson.com/tutorials/java/spring/introduction-to-the-spring-framework/configuring-root-web-application-context-in-spring-web-application
-    
+
+10. @COMPONENT
+If we mark a class with @Component or one of the other Stereotype annotations these classes will be auto-detected using classpath scanning.
+@Component - is generic and can be used across application.
+@Service – annotate classes at service layer level.
+@Controller – annotate classes at presentation layers level, mainly used in Spring MVC.
+@Repository – annotate classes at persistence layer, which will act as database repository.
+@Configuration - Indicates that a class declares one or more @Bean methods and may be processed by the Spring container to generate bean definitions and service requests for those beans at runtime
+@Bean - Indicates that a method produces a bean to be managed by the Spring container.
+
+
