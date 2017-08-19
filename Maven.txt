@@ -1,1 +1,11 @@
 
+1) Eclipse may not generate settings.xml for embeded maven.
+2) For error : 
+org.apache.maven.archiver.MavenArchiver.getManifest(org.apache.maven.project.MavenProject,org.apache.maven.archiver.MavenArchiveConfiguration)
+
+As per sln in -  https://stackoverflow.com/questions/37555557/m2e-error-in-mavenarchiver-getmanifest
+From Help > Install New Software.., add a new repository (via the Add.. option), pointing to any of the following 
+
+URLs:
+http://repo1.maven.org/maven2/.m2e/connectors/m2eclipse-mavenarchiver/0.17.2/N/LATEST/
+Then follow the update wizard as usual
