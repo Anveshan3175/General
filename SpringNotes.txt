@@ -24,7 +24,18 @@
     -> Context Loader Listener will create only one (web) application context from multiple files in the web application.
     
  8. If you have a simple Spring MVC application, you could even have a situation where you don’t have a root WebApplicationContext. A DispatcherServlet would still have its own WebApplicationContext, but it doesn’t actually need to have a parent root WebApplicationContext
+ 
+ 9. Specify root Web application context in sring mvc
+     <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath:spring/application-context*.xml</param-value>
+    </context-param>
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
     
+     Web.xml can have only one <context-param>, so only one context object gets created when server loads an application and the data in     that context is shared among all resources (Ex: Servlets and JSPs)
+
 
 References :
 http://www.deroneriksson.com/tutorials/java/spring/introduction-to-the-spring-framework/configuring-root-web-application-context-in-spring-web-application
