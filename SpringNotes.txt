@@ -47,5 +47,6 @@ https://stackoverflow.com/questions/24990400/spring-dao-vs-spring-orm-vs-spring-
  -> Spring-JDBC provides the JdbcTemplate class, that removes plumbing code and helps you concentrate on the SQL query and parameters. You just need to configure it with a DataSource
  -> Spring-ORM is an umbrella module that covers many persistence technologies, namely JPA, JDO, Hibernate and iBatis.For each technology, the configuration basically consists in injecting a DataSource bean into some kind of SessionFactory or EntityManagerFactory etc. bean. For pure JDBC, there's no need for such integration classes (apart from JdbcTemplate), as JDBC only relies on a DataSource.
  -> Spring-Data is an umbrella project that provides a common API to define how to access data (DAO + annotations) in a more generic way, covering both SQL and NOSQL data sources.
+ 
 12.DriverManagerDataSource doesn't provide pooling, use for testing purposes only. straight from the docs
     - http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/#jdbc-introduction
