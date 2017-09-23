@@ -1,1 +1,10 @@
 Debug tomcat in eclipse
+
+Change the line in startup.bat (if you are using Windows)
+
+From
+call "%EXECUTABLE%" start %CMD_LINE_ARGS%
+To
+call "%EXECUTABLE%" jpda start %CMD_LINE_ARGS%
+
+Then in the debug configurations in the eclipse, use debug port as 8000 Apply and debug
