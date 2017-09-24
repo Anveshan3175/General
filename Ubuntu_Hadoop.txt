@@ -28,6 +28,7 @@ Stop: sudo /opt/tomcat/bin/shutdown.sh
 
 To check if it is running:
 ps -ef | grep tomcat
+tail -f logs/catalina.out
 
 6)Hadoop
 Sudo su hduser  (hduser)
