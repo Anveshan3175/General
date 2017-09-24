@@ -26,6 +26,9 @@ sudo tar xzf apache-tomcat-9.0.0.M26.tar.gz
 Start : sudo /opt/tomcat/bin/startup.sh
 Stop: sudo /opt/tomcat/bin/shutdown.sh
 
+To check if it is running:
+ps -ef | grep tomcat
+
 6)Hadoop
 Sudo su hduser  (hduser)
 hduser@anveshan-All-Series:/usr/local/hadoop/sbin$ ./start-all.sh
