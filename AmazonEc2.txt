@@ -16,3 +16,10 @@ http://13.126.193.205:8080/
 mysql :
 /usr/bin/mysql -u root -p
 anvesh
+
+To connect to ec2 instance using putty:
+1. First generate key file in putty format.
+  i.e. first.pem to first.ppk
+ We can do that using putty generator tool
+
+2.Load the key (first.ppk) while logging to putty or winscp
