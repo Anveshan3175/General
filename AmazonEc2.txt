@@ -23,3 +23,6 @@ To connect to ec2 instance using putty:
  We can do that using putty generator tool
 
 2.Load the key (first.ppk) while logging to putty or winscp
+
+Change permissions :
+sudo chmod 777 webapps -R
