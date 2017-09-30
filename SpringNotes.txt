@@ -50,3 +50,8 @@ https://stackoverflow.com/questions/24990400/spring-dao-vs-spring-orm-vs-spring-
  
 12.DriverManagerDataSource doesn't provide pooling, use for testing purposes only. straight from the docs
     - http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/#jdbc-introduction
+    
+    
+13.Generate service classes from wsdl
+wsimport -s . -p com.baeldung.jaxws.server.topdown employeeservicetopdown.wsdl
+Command line options used: -p specifies the target package. -s specifies where to put the generated source files.
