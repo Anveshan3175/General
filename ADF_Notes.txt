@@ -1,5 +1,4 @@
-Since this dialog appears before you create your first business component, you also use it to globally control the SQL flavor that the view objects will use to formulate SQL statements. Although the default for an Oracle database connection is always the Oracle SQL flavor, other SQL flavors you can choose include OLite (for the Oracle Lite database), SQLServer for a Microsoft SQLServer database, DB2 for an IBM DB2 database, and SQL92 for any other supported SQL92- compliant database. Note that you cannot use the Project Properties dialog to change the SQL flavor after you've initialized a data model project, but you can you can override the SQL flavor in the overview editor for the adf-config.xml file. Specifying the database type in the adf-config.xml file supports generating SQL statements during runtime which can require the actual database type. You can locate the file in the Application Resources pane by expanding the Descriptors-ADF META-INF folder.
-			
+Since this dialog appears before you create your first business component, you also use it to globally control the SQL flavor that the view objects will use to formulate SQL statements. Although the default for an Oracle database connection is always the Oracle SQL flavor, other SQL flavors you can choose include OLite (for the Oracle Lite database), SQLServer for a Microsoft SQLServer database, DB2 for an IBM DB2 database, and SQL92 for any other supported SQL92- compliant database. Note that you cannot use the Project Properties dialog to change the SQL flavor after you've initialized a data model project, but you can you can override the SQL flavor in the overview editor for the adf-config.xml file. Specifying the database type in the adf-config.xml file supports generating SQL statements during runtime which can require the actual database type. You can locate the file in the Application Resources pane by expanding the Descriptors-ADF META-INF folder.		
 			
 	    <metadata-store-usage id="mstore-usage_2">
               <metadata-store class-name="oracle.mds.
@@ -17,13 +16,9 @@ A page fragment is a JSF document that is rendered as content within another JSF
 Page fragments are typically used in bounded task flows that can be added to a JSF page as a region.
 
 --> very good for all definitions  ex : data control is a bridge from data to UI
-
 --> You can use a router activity to declaratively route control to activities based on logic specified in an "EL expression". 
-
 --> ADF Model implements data controls and data bindings.Data controls abstract the implementation technology of a business service by using standard metadata interfaces to describe the service's operations and data collections, including information about the properties, methods, and types involved. 
-
 --> When building service-oriented Java EE applications, developers implement the core business logic as one or more business services. These back-end services provide clients with a way to query, insert, update, and delete business data as required while enforcing appropriate business rules such as input validators. Using ADF Business Components, you can develop such services declaratively using wizards and visual editors in JDeveloper to generate the required metadata.
-
 --> A managed bean - sometimes simply referred to as an MBean - is a type of JavaBean, created with dependency injection and registered with the application using various configuration files. Managed Beans are particularly used in the Java Management Extensions technology. But with Java EE 6, the specification provides for a more detailed meaning of a managed bean.
 
 ================================
