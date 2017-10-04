@@ -29,6 +29,6 @@ DataControls.dcx,DataBindings.cpx,adfm.xml,view.pageDefs
 2.2) It also adds a page definition file (if one does not already exist for the page) to the page definition subpackage. The default subpackage is view.pageDefs in the adfmsrc directory.
 ================================
 Types of relations in ADF Model
-1) Associations in Entity level
-2) View links at view level
+1) Associations in Entity level (Based on foreign key relation in the database)
+2) View links at view level (Based on foreign key relation in the database)
 
