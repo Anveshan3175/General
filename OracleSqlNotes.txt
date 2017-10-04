@@ -77,3 +77,11 @@ Notes :we created an user who's objects are stored in the database default table
 Create temporary tablespace (Temporaty tablespace is an allocation of space in the database that can contain transient data that persists only for the 
 duration of a session. This transient data cannot be recovered after process or instance failure.):
 ++++++++++++++++++++++++++++++++++++++++++++++++password expired :conn / as sysdba;ALTER USER user_name IDENTIFIED BY password;ALTER 
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Run FOS schema in sqlplus
+1. Go to inner scripts folder : D:\StudyMaterial\ADF\Scripts\Scripts
+2. Open command prompt
+3. sqlplus / AS SYSDBA
+4. Run build.sql : $build.sql
