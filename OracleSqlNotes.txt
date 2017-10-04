@@ -85,3 +85,4 @@ Run FOS schema in sqlplus
 2. Open command prompt
 3. sqlplus / AS SYSDBA
 4. Run build.sql : $build.sql
+Change username in the build.sql
