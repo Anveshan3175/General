@@ -33,3 +33,7 @@ DataControls.dcx,DataBindings.cpx,adfm.xml,view.pageDefs
 2.1) It creates the adfm.xml file in the META-INF directory. This file creates a registry for the DataBindings.cpx file, and is used by the applications metadata layer to allow customization and personalization of the application.
 2.2) It also adds a page definition file (if one does not already exist for the page) to the page definition subpackage. The default subpackage is view.pageDefs in the adfmsrc directory.
 ================================
+Types of relations in ADF Model
+1) Associations in Entity level
+2) View links at view level
+
