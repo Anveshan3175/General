@@ -1,1 +1,4 @@
-
+Creation of VM :
+https://www.youtube.com/watch?v=zjZHUE3tu0E
+https://www.avoiderrors.net/install-android-6-0-marshmallow-on-virtual-box/
+https://osdn.net/projects/android-x86/downloads/65890/android-x86_64-6.0-rc2.iso/
