@@ -291,3 +291,11 @@ Install ubuntu on virtualbox
 3)Install it like in : https://www.youtube.com/watch?v=U2LrFJnSVWU
 
 To see full view mode, Right Ctrl + F (Control button on right hand + F)
+
+Zoom install:
+===============
+Download latest zoom_2.0.52458.0531_amd64.deb package from https://zoom.us/download
+bash> sudo dpkg -i zoom_2.0.52458.0531_amd64.deb
+bash> sudo apt-get -f install
+bash> dpkg -l |grep zoom
+bash> zoom
