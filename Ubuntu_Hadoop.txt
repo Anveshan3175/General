@@ -1,6 +1,7 @@
 
 1)let’s make sure all the packages are up to date. Type the following at the prompt and press Enter
 sudo apt-get update
+export PS1='\u:\W\$ '
 2)Check to see if your Ubuntu Linux operating system architecture is 32-bit or 64-bit, open up a terminal and run the following command below. Type/Copy/Paste: file /sbin/init 
 
 3)Installing Java :
