@@ -299,3 +299,9 @@ bash> sudo dpkg -i zoom_2.0.52458.0531_amd64.deb
 bash> sudo apt-get -f install
 bash> dpkg -l |grep zoom
 bash> zoom
+
+cd /home/anveshan/zoom/
+sudo dpkg -i zoom_amd64.deb
+sudo apt-get -f install
+dpkg -l |grep zoom
+zoom
