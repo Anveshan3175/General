@@ -306,3 +306,7 @@ sudo dpkg -i zoom_amd64.deb
 sudo apt-get -f install
 dpkg -l |grep zoom
 zoom
+
+cd /home/anveshan/zoom/
+zoom
+-----
