@@ -303,8 +303,12 @@ Test : java -version
 set java home:
 sudo update-alternatives --config java   ## Find teh path of java installed
 sudo gedit /etc/environment  ## Ususally JAVA_HOME or any other system variables are set here
-export JAVA_HOME=/usr/lib/jvm/java-9-oracle
+export JAVA_HOME=/usr/lib/jvm/java-9-oracle  ## Add at the bottom
 echo $JAVA_HOME
+Sometimes you may have to make entry in  ~/.bashrc is entry in /etc/environment is not working
+sudo gedit ~/.bashrc
+export JAVA_HOME=/usr/lib/jvm/java-9-oracle ## Add this only if entry in /etc/environment is not working
+
 
 Zoom install:
 ===============
