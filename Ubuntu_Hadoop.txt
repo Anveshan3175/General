@@ -294,6 +294,18 @@ Install ubuntu on virtualbox
 To see full view mode, Right Ctrl + F (Control button on right hand + F)
 java9/Nan123du
 
+Install java 9
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt install oracle-java9-installer
+sudo apt install oracle-java9-set-default
+Test : java -version
+set java home:
+sudo update-alternatives --config java   ## Find teh path of java installed
+sudo gedit /etc/environment  ## Ususally JAVA_HOME or any other system variables are set here
+export JAVA_HOME=/usr/lib/jvm/java-9-oracle
+echo $JAVA_HOME
+
 Zoom install:
 ===============
 Download latest zoom_2.0.52458.0531_amd64.deb package from https://zoom.us/download
