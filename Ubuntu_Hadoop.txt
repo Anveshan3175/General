@@ -309,6 +309,12 @@ Sometimes you may have to make entry in  ~/.bashrc is entry in /etc/environment 
 sudo gedit ~/.bashrc
 export JAVA_HOME=/usr/lib/jvm/java-9-oracle ## Add this only if entry in /etc/environment is not working
 
+Eclipse install:
+sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make
+sudo apt update
+sudo apt install ubuntu-make
+umake ide eclipse-jee ## For java eclipse umake ide eclipse
+select installation as /home/java9/eclipse-jee
 
 Zoom install:
 ===============
