@@ -292,6 +292,7 @@ Install ubuntu on virtualbox
 3)Install it like in : https://www.youtube.com/watch?v=U2LrFJnSVWU
 
 To see full view mode, Right Ctrl + F (Control button on right hand + F)
+java9/Nan123du
 
 Zoom install:
 ===============
