@@ -268,6 +268,9 @@ sudo apt-get install git
 git config --global user.name "Anveshan3175"
 git config --global user.email "akunduru4@gmail.com"
 
+git config --list
+nano ~/.gitconfig
+
 Install Python in Anaconda ubuntu
 ============================================
 1. https://www.continuum.io/downloads
