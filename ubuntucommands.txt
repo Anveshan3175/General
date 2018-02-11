@@ -1,3 +1,18 @@
+Install Ubuntu :
+
+1. Download ubuntu iso : https://www.ubuntu.com/download
+2. Create bootable USB : https://rufus.akeo.ie/
+   -> Download ISO files to the system
+   -> Download Rufus
+   -> Open Rufus, Select ISO file location and proceed with bootable USB
+3. Plug in usb and restart the desktop
+4. Press F2 to enter boot menu
+5. Select USB installation mode
+6. Select one of the options for installation. Delete existing OS or install along with existing OS
+7. Give username and password to continue with other installation steps.
+
+
+
 - Shorten command line (bash) prompt : PS1='\u:\W\$ '
 - To see env variables: env
 - To see profile :cat ~/.profile
