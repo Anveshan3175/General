@@ -1,0 +1,8 @@
+
+TO copy and transfer VM instance from virtal box fom one machine to another machine.
+1. Open virtualbox and select vm instance.
+2. Export Application and select detination file name and location
+3. Select the format as "ova"
+4. Finish the export. IT will take time based on size of the file.
+5.In the another machine, open virtual box.
+6.Import it and it will be available for usage in new machine.
