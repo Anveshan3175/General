@@ -11,6 +11,7 @@ Install Ubuntu :
 6. Select one of the options for installation. Delete existing OS or install along with existing OS
 7. Give username and password to continue with other installation steps.
 
+https://www.youtube.com/watch?v=wYOT1HRLAhA
 
 
 - Shorten command line (bash) prompt : PS1='\u:\W\$ '
