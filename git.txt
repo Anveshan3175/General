@@ -228,6 +228,7 @@ Use projects from Github in eclipse
 13. For the project which you have imported, you can run pom.xml and see if you are able to install war.
 14. If you want to add anything to .gitignore.do it so that they can be ignored while you want to stage and commit.
     trackApp/.gitignore
+15. Use git init to initialize git repository at later point
 
 
 
