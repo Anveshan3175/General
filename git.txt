@@ -223,7 +223,11 @@ Use projects from Github in eclipse
    and select "Import Projects".
 10.In the "Import Project..", select "Finish". 
 11. Open java perspective and you can see project you want to work with.
-
+12. In the eclipse, you don't have to cange maven settings. You can see settings.xml file and maven repositories
+    by checking in the Windows -> Prepferences - > Maven
+13. For the project which you have imported, you can run pom.xml and see if you are able to install war.
+14. If you want to add anything to .gitignore.do it so that they can be ignored while you want to stage and commit.
+    trackApp/.gitignore
 
 
 
