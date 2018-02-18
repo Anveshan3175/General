@@ -127,6 +127,12 @@ Now we try to clone one repository from Github and work on it. So Github, here i
                             The '.gitignore' file is to be committed.
  git add -A             --- Adds all the files to the stage    
  git commit -m "modif.."--- Commit files to local master repo. Give proper message as comment
+ git log                --- To check all logs
+ git status             --- This will tell us that local master is ahead of remote master by one commit
+ git pull origin master --- If there any changes in the remote master, pul them to local first and then push 
+                            your changes to remote
+ git push origin master --- Send canges in local master to remote master
+ 
  
                             
                          
