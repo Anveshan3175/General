@@ -104,15 +104,33 @@ Now we try to clone one repository from Github and work on it. So Github, here i
  2. For the TestGIT repo present in the Github, create clone in the local.
     -> In the girrepos, create folder "TestGIT" (the name shouold match with the remote repo name. In here the
     folder name should match with the repo name in the Github
-    -> Go to TestGIT and execte the clone command.
+    -> Go to TestGIT and execte the clone command. This will download all files from remote and create local remote
  
  mkdir gitrepos
  cd gitrepos
  mkdir TestGIT
  cd TestGIT
  git clone https://github.com/Anveshan3175/TestGIT.git .
+ git status
 
-
+ 3. Make chages in local master and commit them and push them.
+    -> Make changes in one of the files and save them
+    -> Create one file which is not needed to be pushed to remote (to demo use of git ignore). In here all .bk can 
+       be ignored.
+    
+ gedit FirstFile.txt
+ touch FirstFile.txt.bk
+ git status             --- This will show one modified file and one new bk file
+ touch .gitignore
+ gedit .gitignore       --- Add *.bk in the ignore file
+ git status             --- This will show modified file & '.gitignore' but not the '.bk' file 
+                            The '.gitignore' file is to be committed.
+ git add -A             --- Adds all the files to the stage    
+ git commit -m "modif.."--- Commit files to local master repo. Give proper message as comment
+ 
+                            
+                         
+ 
 
 
 
