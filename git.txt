@@ -92,7 +92,7 @@ Add second project to existing repository
 4. Right click the project, in the Team option, click on commit.
 5. Give credentials to complete the process.
 
-**************************************************************************************
+****************************************************************************************************************
 https://www.youtube.com/watch?v=HVsySz-h9r4               best one for intro
 https://www.youtube.com/watch?v=FdZecVxzJbk
 
@@ -202,6 +202,30 @@ git reset <hascode>       --- soft: new and old untracked files will be in stage
 git reset hard <hascode>  --- hard : new will be in Working repo, old files wil be reinstated to that version
 git cherry-pick <hashcode> --- changes the state of the branch to that of state of master representd by hashcode.
 git commit --amend        --- add files to previous commit
+
+
+Use projects from Github in eclipse 
+-----------------------------------
+1. Find out the repository which you want clone and work
+2. Create folder with same name as repository. For ex: when I wanted to work with Spring projects
+   mkdir /home/anvesh/gitrepos/Spring
+3. Goto that folder so that you can initiate clone
+   cd /home/anvesh/gitrepos/Spring
+4. Do git clone.Use Github repo url and destination as current directory
+   git clone https://github.com/Anveshan3175/Spring.git .
+5. Check all projects in the repository are cloned into local or not.
+   ls
+   git status   --- This should tell that all projects are up to date
+6. Open eclipse and ensure GIT is installed in it. Open GIT view
+7. Now do "Add an existing local Git Repository to thi view" 
+8. In the "Add Git Repositories", Browse the "local Git Spring master" which we have created in step 4
+9. Now in the "Git Repositories" view, under "Working Tree", select the project you want to work with, right click
+   and select "Import Projects".
+10.In the "Import Project..", select "Finish". 
+11. Open java perspective and you can see project you want to work with.
+
+
+
 
 
 **************************************************************************************
