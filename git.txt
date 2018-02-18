@@ -94,10 +94,9 @@ Add second project to existing repository
 
 **************************************************************************************
 https://www.youtube.com/watch?v=HVsySz-h9r4               best one for intro
-***************************************************************************************
-
 
 How to work with GIT in ubuntu
+------------------------------
 
  1. In the home directory, create folder "gitrepos" . This wil act as container for all git repositories.
 Now we try to clone one repository from Github and work on it. So Github, here is remote.
@@ -150,6 +149,17 @@ Now we try to clone one repository from Github and work on it. So Github, here i
                             
                          
  
+ 
+ Revert file to state that is last pulled from repo
+ --------------------------------------------------
+ git pull origin master
+ gedit FirstFile.txt      --- Make changes in the file
+ git status               --- Displays untracked changes in the FirstFile.txt
+ git diff                 --- Shows differences in the file FirstFile.txt
+ 
+ 1. Now you want feel changes are gibberish. You want to undo all changes and reinstate the file to it initial version that is pulled from repository
+ 
+ git checkout FirstFile.txt --- checkout command does reinstation
 
 
 
