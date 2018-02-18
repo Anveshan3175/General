@@ -173,6 +173,18 @@ Now we try to clone one repository from Github and work on it. So Github, here i
  git log --stat
 
 
+simple conflict scenario
+-------------------------
+1.pull update from remote master
+2.Make changes in local master
+3.Make changes in remote master
+4.Stage changes in local master
+5.commit changes in local master
+6.Push changes to remote master and you will see error. You cannot push since there are updates in master
+7.Pull changes from remote master
+8.You see all the conflicts.Open the files having conflicts and make changes
+9.Stage and commit the changes to local master
+10.Push the changes to the remote master
 
 
 
