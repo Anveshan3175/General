@@ -145,6 +145,11 @@ Now we try to clone one repository from Github and work on it. So Github, here i
  git commit -m "modi..." --- Commit the file to local repo
  git pull origin master  --- Here "origin" is name of remote and "msater" is name of branch.
                              Now conflict message is thrown
+ Open FirstFile.txt and resolve all conflicts. You can see conflicts which are marked in the file.
+ git add FirstFile.txt
+ git commit -m "commit after resolve..."  --- commits to staging area after resoultion of conflicts
+ git pull origin master   --- It will be successfull
+ git push origin master   --- It will be successfull
                             
        
  
