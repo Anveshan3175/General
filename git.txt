@@ -94,6 +94,7 @@ Add second project to existing repository
 
 **************************************************************************************
 https://www.youtube.com/watch?v=HVsySz-h9r4               best one for intro
+https://www.youtube.com/watch?v=FdZecVxzJbk
 
 How to work with GIT in ubuntu
 ------------------------------
@@ -144,6 +145,7 @@ Now we try to clone one repository from Github and work on it. So Github, here i
  git commit -m "modi..." --- Commit the file to local repo
  git pull origin master  --- Here "origin" is name of remote and "msater" is name of branch.
                              Now conflict message is thrown
+                            
        
  
  
@@ -163,6 +165,7 @@ Now we try to clone one repository from Github and work on it. So Github, here i
  git checkout FirstFile.txt --- checkout command does reinstation
  git status                 --- Now working directory is clean
  git diff                   --- doesn't show any differences
+ git log --stat
 
 
 
@@ -172,7 +175,16 @@ Now we try to clone one repository from Github and work on it. So Github, here i
 
 
 
-
+Other Commands:
+---------------
+git clean -df             --- removes all untracked files and directories
+git log                   --- Shows all commits information
+git log stat              --- Shows details of commits
+git reset soft <hascode>  --- reset master branch to any of old state which is recognized by hashcode of commit
+git reset <hascode>       --- soft: new and old untracked files will be in stage. Default :Will be in working repo
+git reset hard <hascode>  --- hard : new will be in Working repo, old files wil be reinstated to that version
+git cherry-pick <hashcode> --- changes the state of the branch to that of state of master representd by hashcode.
+git commit --amend        --- add files to previous commit
 
 
 **************************************************************************************
