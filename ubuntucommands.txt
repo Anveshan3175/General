@@ -20,6 +20,22 @@ https://www.youtube.com/watch?v=wYOT1HRLAhA
 - To see bash : cat ~/.bashrc
 - To grep anything in bashrc : cat ~/.bashrc|grep -i scala
 
+Performance related:
+--------------------
+1. Find out the Culprit of a Slow Boot
+   systemd-analyze blame                   --- Lists all startup services
+   Now you can see all the startup services and how long they are taking. You can stop startup service by
+   sudo systemctl disable vboxadd.service  --- <service name from above list>
+   systemd-analyze time                    --- Gives breakup of all startup times of different components
+   
+   
+2. To install preload. Preload is demon which will preload aplications based on users previous habits. May be you
+   can open browser much faster.
+
+   sudo apt install preload                --- Install preload in 16.0.4
+   systemctl status preload                --- Chks current status of preload demon
+   sudo systemctl start preload            --- Start the preload
+
 
 
 
