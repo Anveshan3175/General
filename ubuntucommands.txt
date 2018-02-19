@@ -35,6 +35,10 @@ Performance related:
    sudo apt install preload                --- Install preload in 16.0.4
    systemctl status preload                --- Chks current status of preload demon
    sudo systemctl start preload            --- Start the preload
+   
+3. To see current performance of ubuntu, use top. 
+   top 
+   Press "P"  to sort process by desc order of maximum usage
 
 
 
