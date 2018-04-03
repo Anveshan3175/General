@@ -160,7 +160,8 @@ Now we try to clone one repository from Github and work on it. So Github, here i
  
  Revert file to state that is last pulled from repo
  --------------------------------------------------
- git pull origin master
+ git pull origin master   --- Recommended when there are no changes in your local
+ git pull --rebase        --- Recommended when there are local changes
  gedit FirstFile.txt      --- Make changes in the file
  git status               --- Displays untracked changes in the FirstFile.txt
  git diff                 --- Shows differences in the file FirstFile.txt
@@ -171,6 +172,7 @@ Now we try to clone one repository from Github and work on it. So Github, here i
  git status                 --- Now working directory is clean
  git diff                   --- doesn't show any differences
  git log --stat
+ git stash                  ---  Current changes willl be stashed with id which can be retrieved later
 
 
 simple conflict scenario
