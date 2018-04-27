@@ -232,7 +232,13 @@ Use projects from Github in eclipse
     trackApp/.gitignore
 15. Use git init to initialize git repository at later point
 
-
-
-
 **************************************************************************************
+1. Create GIT workspace folder in the home directory. This folder has all projects.
+   Note : You can create this  using eclipse as well
+          -> Create new project in eclipse
+          -> Select project -> Team -> Share Project
+          -> Givelocal repo as /home/<username>/gitworkspace
+          -> Now pull and push the project.
+          -> Eclipse will ask for remote repository details. Give URI as project repo from git.This will populate other details
+2. Open terminal and go to /home/<username>/gitworkspace
+3. git init   (It will have readme)
