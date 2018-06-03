@@ -2,3 +2,8 @@ Creation of VM :
 https://www.youtube.com/watch?v=zjZHUE3tu0E
 https://www.avoiderrors.net/install-android-6-0-marshmallow-on-virtual-box/
 https://osdn.net/projects/android-x86/downloads/65890/android-x86_64-6.0-rc2.iso/
+
+Install Andriod Studio on Ububtu:
+1. Download Android zip version  : https://developer.android.com/studio/#downloads   
+2. Go to linux section and unizp it
+3. ./studio.sh
