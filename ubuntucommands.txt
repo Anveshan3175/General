@@ -67,6 +67,16 @@ Performance related:
    Press "P"  to sort process by desc order of maximum usage
 
 ##############################
+-----------------------------------------------------------
+sudo pip3 install virtualenv
+virtualenv testenv  -- python2
+python3 -m virtualenv env  -- python3
+source testenv/bin/activate
+deactivate
+(ENV)$ deactivate
+$ rm -r /path/to/ENV
+-----------------------------------------------------------
+##############################
 
 
 
