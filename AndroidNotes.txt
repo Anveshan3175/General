@@ -7,3 +7,5 @@ Install Andriod Studio on Ububtu:
 1. Download Android zip version  : https://developer.android.com/studio/#downloads   
 2. Go to linux section and unizp it
 3. ./studio.sh
+4. Connect mobile to system to simulate and test your changes
+
