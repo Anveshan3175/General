@@ -36,3 +36,10 @@ as-install-parent  -> \glassfish5
 domain-root-dir -> as-install/domains/
 domain-dir -> domain-root-dir/domain-name
 instance-dir -> domain-dir/instance-name
+
+To Start the Default Domain
+as-install/bin/asadmin start-domain  -> glassfish5/glassfish/bin/asadmin start-domain
+
+To Stop the Default Domain
+as-install/bin/asadmin stop-domain  -> glassfish5/glassfish/bin/asadmin stop-domain
+
