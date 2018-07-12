@@ -51,3 +51,16 @@ J2ee SDK:
        services.msc
 4. http://localhost:4848/common/index.jsf
 
+++++++++++++++++++++++++++++++++++++++++++++++++++
+/glassfish/domains/domain1/config/domain.xml
+
+Change: name="http-listener-1" **port="8080"** name="http-listener-2" **port="8181"**
+
+To: name="http-listener-1" **port="9090"** name="http-listener-2" **port="9191"**
+
+Then, remove the server from your framework (Eclipse for example), close it, start it and add the Glashfish again.
+Before starting your framework make sure there is no file such: /glassfish/domains/domain1/osgi-cache/felix/*.lock
+In case it exists, remove it, you may stop any Java process for removing it.
+These steps worked for me.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
