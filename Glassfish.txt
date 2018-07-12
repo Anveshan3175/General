@@ -43,3 +43,11 @@ as-install/bin/asadmin start-domain  -> glassfish5/glassfish/bin/asadmin start-d
 To Stop the Default Domain
 as-install/bin/asadmin stop-domain  -> glassfish5/glassfish/bin/asadmin stop-domain
 
+J2ee SDK:
+1. Download j2ee dk
+2. Extract it and you will see Glassfish5 folder
+3. D:\java_ee_sdk-8\glassfish5\bin>asadmin start-domain
+   --> if port i already occupid, then release the port. Mostly it will be oracle service using it. So stop oracle service.
+       services.msc
+4. http://localhost:4848/common/index.jsf
+
