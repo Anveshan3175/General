@@ -31,7 +31,8 @@ deploy application:
   D:\Software\latest-glassfish\glassfish5\glassfish\domains\domain1\applications
   
   
-as-install -> \glassfishv3\glassfish
-as-install-parent  -> \glassfishv3
+as-install -> \glassfish5\glassfish
+as-install-parent  -> \glassfish5
 domain-root-dir -> as-install/domains/
 domain-dir -> domain-root-dir/domain-name
+instance-dir -> domain-dir/instance-name
