@@ -29,3 +29,9 @@ deploy application:
 4.asadmin redeploy j2ee8.war<war name>
 5. When name is prompted, give the name for deployment
   D:\Software\latest-glassfish\glassfish5\glassfish\domains\domain1\applications
+  
+  
+as-install -> \glassfishv3\glassfish
+as-install-parent  -> \glassfishv3
+domain-root-dir -> as-install/domains/
+domain-dir -> domain-root-dir/domain-name
