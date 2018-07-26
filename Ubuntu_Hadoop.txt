@@ -3,7 +3,7 @@
 sudo apt-get update
 export PS1='\u:\W\$ '
 2)Check to see if your Ubuntu Linux operating system architecture is 32-bit or 64-bit, open up a terminal and run the following command below. Type/Copy/Paste: file /sbin/init 
-
+--------------------------------
 3)Installing Java :
 sudo apt-add-repository ppa:webupd8team/java
 sudo apt-get update
@@ -14,6 +14,15 @@ export JAVA_HOME=/usr/lib/jvm/java-8-oracle
 echo $JAVA_HOME
 All Java environment variables are set in /etc/profile.d/jdk.sh, which is a file installed by oracle-java8-set-default and is read by the shell on start-up
 
+To change default java version:
+sudo update-alternatives --config java
+-> select your choice from all the java locations displayed
+-> java -versin should reflect your new java version
+-> To change java home,
+    sudo gedit /etc/environment
+    sudo gedit ~/.bashrc 
+    sudo /etc/profile.d/jdk.sh
+---------------------------
 4)Install eclipse
 http://www.krizna.com/ubuntu/install-eclipse-ubuntu-14-04/
 
