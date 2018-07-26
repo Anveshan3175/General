@@ -65,7 +65,29 @@ These steps worked for me.
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Install Glassfish on Ubuntu 1604
 
-1. 
+1. sudo apt-get update
+2. sudo apt-get upgrade
+3. Install Java (Tricky part is Glassfisah needs JDK)
+    -> one way is open jdk
+       sudo apt-get install openjdk-7-jre
+       sudo apt-get install openjdk-7-jdk
+    -> INstall oracle java
+       sudo apt-get install python-software-properties
+       sudo add-apt-repository ppa:webupd8team/java
+       sudo apt-get update
+       sudo apt-get install oracle-java8-installer
+   Check Java verion - java -version
+4. Install GlassFish
+   -> Go to directory you want to install Glassfish
+   -> wget http://download.java.net/glassfish/4.1.1/release/glassfish-4.1.1.zip
+   -> unzip glassfish-4.1.1.zip
+   -> glassfish4/bin/asadmin start-domain
+   -> http://localhost:4848/common/index.jsf  should launch admin page
+
+
+If there is error like this : "GlassFish requires Java SE version 6. Your JDK is version 0" then
+-> Check if you have any version jdk installed in your system
+> Add it your asenv.conf. Entry is  AS_JAVA="/usr/lib/jvm/java-8-openjdk-amd64"
 
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
