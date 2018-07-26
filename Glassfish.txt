@@ -63,4 +63,10 @@ Before starting your framework make sure there is no file such: /glassfish/domai
 In case it exists, remove it, you may stop any Java process for removing it.
 These steps worked for me.
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Install Glassfish on Ubuntu 1604
+
+1. 
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
