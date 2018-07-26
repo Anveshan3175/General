@@ -21,7 +21,8 @@ sudo update-alternatives --config java
 -> To change java home,
     sudo gedit /etc/environment
     sudo gedit ~/.bashrc 
-    sudo /etc/profile.d/jdk.sh
+    sudo gedit /etc/profile.d/jdk.sh
+    export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 ---------------------------
 4)Install eclipse
 http://www.krizna.com/ubuntu/install-eclipse-ubuntu-14-04/
