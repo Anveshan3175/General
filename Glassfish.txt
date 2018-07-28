@@ -102,7 +102,25 @@ Run application in Glassfish
    ./asadmin stop-domain
   
    
-   
-
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Set up connection pool
 
+1. Open connection pool UI in the console and set it up. Below is example for mysql
+
+JDBC > JDBC Connection pool
+1. Give below details:
+    pool name : Any name
+    Resouce Type : java.sql.Driver
+    Driver classname : com.mysql.jdbc.Driver
+    password:anvesh
+    user :root
+    URL: jdbc:mysql://localhost:3306/cts
+2. Add mysql connector in Glassfish/Glassfish/lib/
+
+Test it by ping and see if connection is established
+
+JNDI DataSource :
+JDBC > JDBC Resources
+1.Give a name
+2. Select the pool which we have created above
+  
