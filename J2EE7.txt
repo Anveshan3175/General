@@ -1,3 +1,6 @@
 
 -> A resource is program object that provides connections to systems such as database servers and messaging systems.
 -> Each object is identified by JNDI name
+-> J2EE allows you have references to resources and other dependecies  without having to instantiate directly  by proving Injection.Annotate at injection points and Contianer will provide them at run time.
+-> Resource Injection : Injection of resources
+-> Dependancy Injection : Injection of dependancies 
