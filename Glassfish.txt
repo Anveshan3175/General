@@ -88,7 +88,21 @@ Install Glassfish on Ubuntu 1604
 If there is error like this : "GlassFish requires Java SE version 6. Your JDK is version 0" then
 -> Check if you have any version jdk installed in your system
 > Add it your asenv.conf. Entry is  AS_JAVA="/usr/lib/jvm/java-8-openjdk-amd64"
-
+------------------
+Run application in Glassfish
+1. Create maven web project in eclipse
+2. Build the application and create war file
+3. Start the Glassfish server.
+   ./asadmin start-domain   from location /home/anvesh/glassfish4/glassfish/bin
+4. Open the admin page
+   http://localhost:4848/common/index.jsf
+5. In the admin page CommonTasks -> Applications -> Click on deploy-> select the war file -> Launch ->  
+   select the    url  (Ex: http://localhost:8080/test/index.jsp)
+6. Stop the server 
+   ./asadmin stop-domain
+  
+   
+   
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
