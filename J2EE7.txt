@@ -4,3 +4,27 @@
 -> J2EE allows you have references to resources and other dependecies  without having to instantiate directly  by proving Injection.Annotate at injection points and Contianer will provide them at run time.
 -> Resource Injection : Injection of resources
 -> Dependancy Injection : Injection of dependancies 
+-> To connect to database using Resource Injection, 
+   1. Configure jdbc datasource in the Glassfish server (check glassfish server notes)
+   2. use below code
+   
+   javax.naming.InitialContext ctx;
+		  java.sql.Connection conn = null;
+		try {
+			ctx = new javax.naming.InitialContext();
+			javax.sql.DataSource ds = (javax.sql.DataSource)ctx.lookup("mysqlJDBC"); //Use better convntion "jdbc/mysqldb"
+			conn = ds.getConnection();
+			System.out.println("-------------------------Connected----------------------"+conn);
+		} catch (NamingException | SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		finally {
+			 try {
+				 System.out.println("-------------------------Connection close----------------------");
+				conn.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
