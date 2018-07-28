@@ -1,1 +1,3 @@
 
+-> A resource is program object that provides connections to systems such as database servers and messaging systems.
+-> Each object is identified by JNDI name
