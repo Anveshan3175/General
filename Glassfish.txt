@@ -20,7 +20,8 @@ port : 9009
 path:
 GLASSFISH_HOME
 D:\Software\latest-glassfish\glassfish5
-path : %GLASSFISH_HOME%\bin;
+path : %GLASSFISH_HOME%\bin;    (once you set path, asadmin can be run from any location)
+version : asadmin version
 
 in the cmd : asadmin start-domain
 asadmin stop-domain
