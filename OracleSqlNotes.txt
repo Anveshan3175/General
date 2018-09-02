@@ -88,4 +88,5 @@ Run FOS schema in sqlplus
 Change username in the build.sql
 
 TO reset password :
+alter user <username> identified by <password>;
 alter user hib identified by hib;
