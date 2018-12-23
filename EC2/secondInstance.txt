@@ -33,6 +33,8 @@ anvesh
 create database userDB;
 use database userDB;
 
+SHOW CREATE TABLE
+
 CREATE TABLE Person(id int(11) unsigned NOT NULL, name varchar(20) NOT NULL,country varchar(20) DEFAULT NULL, age int(11) DEFAULT NULL, occupation varchar(80) DEFAULT NULL,PRIMARY KEY (id));
 CREATE TABLE Login (name varchar(20) NOT NULL, password varchar(20) NOT NULL, PRIMARY KEY (name));
 
