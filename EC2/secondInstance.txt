@@ -21,3 +21,24 @@ To convert your private key (.pem to .ppk)
         -> Choose Open to start the PuTTY session.
     
 Reference : https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html
+
+-> install java 8 as in my ubuntu notes
+-> install mysql as in my ubuntu notes
+-> install tomcat as in my ubuntu notes
+
+mysql :
+/usr/bin/mysql -u root -p
+anvesh
+
+create database userDB;
+use database userDB;
+
+CREATE TABLE Person(id int(11) unsigned NOT NULL, name varchar(20) NOT NULL,country varchar(20) DEFAULT NULL, age int(11) DEFAULT NULL, occupation varchar(80) DEFAULT NULL,PRIMARY KEY (id));
+CREATE TABLE Login (name varchar(20) NOT NULL, password varchar(20) NOT NULL, PRIMARY KEY (name));
+
+
+host : ec2-13-232-250-89.ap-south-1.compute.amazonaws.com
+id : 172.31.19.28
+http://ec2-13-232-250-89.ap-south-1.compute.amazonaws.com:8080/lts/login
+http://ec2-13-232-250-89.ap-south-1.compute.amazonaws.com:8080/springCrudPerson/persons
+http://ec2-13-232-250-89.ap-south-1.compute.amazonaws.com:8080/PersonWS/endpoints/PersonService.wsdl
