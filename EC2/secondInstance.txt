@@ -1,1 +1,5 @@
 
+-> Create new instance. 
+   -> select ubuntu instance.
+   -> open tcp, http ports
+   -> Download and save the key file carefully
