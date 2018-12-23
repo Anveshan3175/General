@@ -41,6 +41,10 @@ CREATE TABLE Login (name varchar(20) NOT NULL, password varchar(20) NOT NULL, PR
 
 host : ec2-13-232-250-89.ap-south-1.compute.amazonaws.com
 id : 172.31.19.28
-http://ec2-13-232-250-89.ap-south-1.compute.amazonaws.com:8080/lts/login
+
+-> Person UI and WSDL
 http://ec2-13-232-250-89.ap-south-1.compute.amazonaws.com:8080/springCrudPerson/persons
 http://ec2-13-232-250-89.ap-south-1.compute.amazonaws.com:8080/PersonWS/endpoints/PersonService.wsdl
+
+-> LTS
+http://ec2-13-232-250-89.ap-south-1.compute.amazonaws.com:8080/lts/login
