@@ -13,4 +13,10 @@ Install Java:
    >> jshell
 
 3. To enable New document, in the terminal 
-   >>> touch ~/Templates/EmptyDocument\ Document
+   >> touch ~/Templates/EmptyDocument\ Document
+   
+4. Install tomcat9
+   >> cd /opt
+   >> sudo wget http://www-eu.apache.org/dist/tomcat/tomcat-9/v9.0.14/bin/apache-tomcat-9.0.14.tar.gz 
+   >> sudo tar xzf apache-tomcat-9.0.0.M26.tar.gz
+   >> sudo mv apache-tomcat-9.0.0.M26 tomcat9
