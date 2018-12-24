@@ -9,6 +9,8 @@ Install Java:
    add below lines:
      export PATH=$PATH:/opt/jdk-11.0.1/bin
      export JAVA_HOME=/opt/jdk-11.0.1
+   open Jshell
+   >> jshell
 
 3. To enable New document, in the terminal 
    >>> touch ~/Templates/EmptyDocument\ Document
