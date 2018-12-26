@@ -46,3 +46,11 @@ Install Java:
    export MAVEN_HOME=/opt/maven
    export M2_HOME=/opt/maven
    export PATH=$PATH:/opt/maven/bin
+   
+6. Install Eclipse
+   a) Download latest J2EE eclipse from eclipse site. Select linux version
+   >> sudo wget https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2018-12/R/eclipse- jee-2018-12-R-linux-gtk-x86_64.tar.gz&mirror_id=1248
+   >> sudo mv /home/anveshan/Downloads/eclipse-jee-2018-12-R-linux-gtk-x86_64.tar.gz /opt/    (Move to opt folder)
+   >> sudo tar xzvf eclipse-jee-2018-12-R-linux-gtk-x86_64.tar.gz
+   >> sudo chmod +x /opt/eclipse/eclipse
+   >> /opt/eclipse/eclipse  ()don't use sudo for launching eclipse if you have not set Java home for sudo bash)
