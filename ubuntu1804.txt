@@ -52,5 +52,5 @@ Install Java:
    >> sudo wget https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2018-12/R/eclipse- jee-2018-12-R-linux-gtk-x86_64.tar.gz&mirror_id=1248
    >> sudo mv /home/anveshan/Downloads/eclipse-jee-2018-12-R-linux-gtk-x86_64.tar.gz /opt/    (Move to opt folder)
    >> sudo tar xzvf eclipse-jee-2018-12-R-linux-gtk-x86_64.tar.gz
-   >> sudo chmod +x /opt/eclipse/eclipse
-   >> /opt/eclipse/eclipse  ()don't use sudo for launching eclipse if you have not set Java home for sudo bash)
+   >> sudo chmod +x /opt/eclipse/eclipse  (Make eclipse executable)
+   >> /opt/eclipse/eclipse  (Launch.Don't use sudo for launching eclipse if you have not set Java home for sudo bash)
