@@ -31,3 +31,7 @@ Install Java:
    ps -ef | grep tomcat
    tail -f logs/catalina.out
    sudo wget localhost:8080
+   
+   setup manager user, put only these two lines in users.xml
+   <role rolename="manager-gui"/>
+   <user username="admin" password="admin" roles="manager-gui"/>
