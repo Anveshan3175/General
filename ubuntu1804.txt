@@ -35,3 +35,14 @@ Install Java:
    setup manager user, put only these two lines in users.xml
    <role rolename="manager-gui"/>
    <user username="admin" password="admin" roles="manager-gui"/>
+
+5. Install Maven
+   a) get the download url for latest maven in the maven site. IN the download page, right click on the file and copy as url
+   >> sudo wget http://mirrors.wuchna.com/apachemirror/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-bin.tar.gz
+   >> tar xzvf apache-maven-3.6.0-bin.tar.gz
+   >> sudo mv apache-maven-3.6.0-bin.tar.gz maven
+   >> cd ~
+   >> gedit .bashc
+   export MAVEN_HOME=/opt/maven
+   export M2_HOME=/opt/maven
+   export PATH=$PATH:/opt/maven/bin
