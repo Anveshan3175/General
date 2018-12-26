@@ -20,3 +20,14 @@ Install Java:
    >> sudo wget http://www-eu.apache.org/dist/tomcat/tomcat-9/v9.0.14/bin/apache-tomcat-9.0.14.tar.gz 
    >> sudo tar xzf apache-tomcat-9.0.0.M26.tar.gz
    >> sudo mv apache-tomcat-9.0.0.M26 tomcat9
+   
+   Add JAVA_HOME in /etc/environment  (to run server we use sudo and for some reasons sudo doesn't pick JAVA_HOME)
+   JAVA_HOME=/opt/jdk-11.0.1
+   
+   Start : sudo /opt/tomcat9/bin/startup.sh
+   Stop  : sudo /opt/tomcat9/bin/shutdown.sh
+
+   To check if it is running:
+   ps -ef | grep tomcat
+   tail -f logs/catalina.out
+   sudo wget localhost:8080
