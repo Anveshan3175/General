@@ -54,3 +54,12 @@ Install Java:
    >> sudo tar xzvf eclipse-jee-2018-12-R-linux-gtk-x86_64.tar.gz
    >> sudo chmod +x /opt/eclipse/eclipse  (Make eclipse executable)
    >> /opt/eclipse/eclipse  (Launch.Don't use sudo for launching eclipse if you have not set Java home for sudo bash)
+   
+7. Install GIT
+   >> sudo apt-get update
+   >> sudo apt-get install git
+   >> git --version
+   >> git config --global user.name "Anveshan"
+   >> git config --global user.email "akunduru4@gmail.com"
+   >> git config --list
+   >> git config --global core.autocrlf input     (not done)  http://www.codebind.com/linux-tutorials/install-git-ubuntu-18-04-lts-linux/
