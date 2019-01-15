@@ -61,3 +61,27 @@ Sample for different plugins :
 				</configuration>
 			</plugin>
 		</plugins>
+
+3) Below is the structure of web project in the maven
+
+ |-- pom.xml  
+ `-- src
+     `-- main
+         |-- java
+         |   `-- com
+         |       `-- example
+         |           `-- projects
+         |               `-- SampleAction.java
+         |-- resources
+         |   `-- images
+         |       `-- sampleimage.jpg
+         |   `-- js
+         |       `-- scripts.js
+         |   `-- css
+         |       `-- styles.css
+         `-- webapp
+             |-- WEB-INF
+             |   `-- web.xml
+             |-- index.jsp
+             `-- jsp
+                 `-- websource.jsp
