@@ -8,3 +8,16 @@ To
 call "%EXECUTABLE%" jpda start %CMD_LINE_ARGS%
 
 Then in the debug configurations in the eclipse, use debug port as 8000 Apply and debug
+
+
+------------------------------------------------------------
+Tomcat debug in ubuntu:
+1. Open a console
+2. sudo su
+3. cd /opt/tomcat9/
+4. set JPDA_ADDRESS=8000
+5. set JPDA_TRANSPORT=dt_socket
+6. cd bin
+7. ./catalina.sh jpda run
+Go to the tomcat home folder
+------------------------------------------------------------
