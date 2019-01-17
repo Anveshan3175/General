@@ -35,6 +35,17 @@ Install Java:
    setup manager user, put only these two lines in users.xml
    <role rolename="manager-gui"/>
    <user username="admin" password="admin" roles="manager-gui"/>
+   
+   ------------------------------------------------------------
+   Tomcat debug:
+   1. Open a console
+   2. sudo su
+   3. cd /opt/tomcat9/
+   4. set JPDA_ADDRESS=8000
+   5. set JPDA_TRANSPORT=dt_socket
+   6. cd bin
+   7. ./catalina.sh jpda run
+   ------------------------------------------------------------
 
 5. Install Maven
    a) get the download url for latest maven in the maven site. IN the download page, right click on the file and copy as url
