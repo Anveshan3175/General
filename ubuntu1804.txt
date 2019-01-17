@@ -45,6 +45,7 @@ Install Java:
    5. set JPDA_TRANSPORT=dt_socket
    6. cd bin
    7. ./catalina.sh jpda run
+   8. eclipse -> current project -> right click -> Debug Configurations -> 8000 -> Debug
    ------------------------------------------------------------
 
 5. Install Maven
