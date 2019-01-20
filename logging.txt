@@ -25,6 +25,9 @@
      ->  Suppose, if a project is already using log4j, and you included a library say Apache Active MQ, which has dependency 
          on logback, another logging library, then you need to include them as well, but if Apache Active MQ uses SL4J, YOU CAN
          CONTINUE with your logging library, without pain of adding and maintaining new logging framework.
+  3. Idea of abstracting logging library is not new and Apache commons logging is already using it, but now SLF4J is quickly 
+     becoming an standard for logging in Java world.
+
 
 
 
