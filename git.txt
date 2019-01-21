@@ -110,6 +110,7 @@ Now we try to clone one repository from Github and work on it. So Github, here i
  cd gitrepos
  mkdir TestGIT
  cd TestGIT
+ git init
  git clone https://github.com/Anveshan3175/TestGIT.git .    --- create and track the project locally
  git status
 
