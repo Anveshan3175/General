@@ -58,7 +58,7 @@ Install Java:
    export MAVEN_HOME=/opt/maven
    export M2_HOME=/opt/maven
    export PATH=$PATH:/opt/maven/bin
-   
+   ------------------------------------------------------------
 6. Install Eclipse
    a) Download latest J2EE eclipse from eclipse site. Select linux version
    >> sudo wget https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2018-12/R/eclipse- jee-2018-12-R-linux-gtk-x86_64.tar.gz&mirror_id=1248
@@ -66,7 +66,7 @@ Install Java:
    >> sudo tar xzvf eclipse-jee-2018-12-R-linux-gtk-x86_64.tar.gz
    >> sudo chmod +x /opt/eclipse/eclipse  (Make eclipse executable)
    >> /opt/eclipse/eclipse  (Launch.Don't use sudo for launching eclipse if you have not set Java home for sudo bash)
-   
+   ------------------------------------------------------------
 7. Install GIT
    >> sudo apt-get update
    >> sudo apt-get install git
@@ -75,3 +75,32 @@ Install Java:
    >> git config --global user.email "akunduru4@gmail.com"
    >> git config --list
    >> git config --global core.autocrlf input     (not done)  http://www.codebind.com/linux-tutorials/install-git-ubuntu-18-04-lts-linux/
+   ------------------------------------------------------------
+ 8. Mysql 8 installation
+   >> sudo cd /op/
+   >> wget -c https://dev.mysql.com/get/mysql-apt-config_0.8.10-1_all.deb
+   >> sudo dpkg -i mysql-apt-config_0.8.10-1_all.deb
+   select and click on <OK>
+   >> select and click on <OK>
+   >> sudo apt-get install mysql-server
+   give password : anvesh
+   <ok>
+   <strongly Recommended>
+   >> sudo mysql_secure_installation  // Improved security
+   >> systemctl status mysql-server   // To check status of server
+   >> systemctl stop mysql            // To stop the service run
+   >> systemctl start mysql           // To start the service run
+   >> mysql -u root -p                // To login to your database engine
+   ------------------------------------------------------------
+   
+   
+   
+   
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
