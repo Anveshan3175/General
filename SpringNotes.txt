@@ -55,3 +55,5 @@ https://stackoverflow.com/questions/24990400/spring-dao-vs-spring-orm-vs-spring-
 13.Generate service classes from wsdl
 wsimport -s . -p com.baeldung.jaxws.server.topdown employeeservicetopdown.wsdl
 Command line options used: -p specifies the target package. -s specifies where to put the generated source files.
+
+14. @EnableTransactionManagement and <tx:annotation-driven/> only looks for @Transactional on beans in the same application context they are defined in. This means that, if you put annotation driven configuration in a WebApplicationContext for a DispatcherServlet, it only checks for @Transactional beans in your controllers, and not your services
