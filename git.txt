@@ -135,6 +135,20 @@ Now we try to clone one repository from Github and work on it. So Github, here i
                             your changes to remote
  git push origin master --- Send canges in local master to remote master
  
+ 
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ Summarize working with GIT once initialized
+ cd /eclipseWS/Spring
+ git init
+ git pull origin master
+ git status
+ git add intv/src/main/java/   -- you can include NEW,DELETED,MODIFIED files to staging here
+ git commit -m "all src files"
+ git push origin master
+ akunduru4@gmail.com
+ Nan123du
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 
  4. Try conflict scenarioes
     -> Make canges to file in local master. MAke changes to same file in remote. Try to push the file from local 
        to remote.
