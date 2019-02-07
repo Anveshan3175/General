@@ -70,3 +70,5 @@ Command line options used: -p specifies the target package. -s specifies where t
 		dataSource.setPassword(env.getRequiredProperty("jdbc.password"));
 		return dataSource;
 	}
+	
+16. JSP files in a directory under the 'WEB-INF' directory so there can be no direct access by clients
