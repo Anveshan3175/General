@@ -1,23 +1,29 @@
 1.WebApplicationContext : 
     Each DispatcherServlet has its own WebApplicationContext (which extends the global context). It is referenced by  "contextConfigLocation" init parameter in servlet tag.Spring encourages encapsulation: beans that are "general purpose" and shared between multiple DispatcherServlets should live in the global context, where as beans that are only interacted with by your DispatcherServlet aren't shared. 
+--------------------------------------------------------------
 2. Root WebApplicationContext : 
     The root WebApplicationContext is created by the ContextLoader and contains all the beans defined in the configuration files referenced by "contextConfigLocation" CONTEXT parameter  (unless you provide an explicit alternative, this means WEB-INF/applicationContext.xml).   
    --> To create and initialize the root Web Application Context, we specify Spring’s ContextLoaderListener class in our web.xml file. The ContextLoaderListener’s <listener> element should be specified after the Log4jConfigListener’s <listener> element in your web.xml file if you have a Log4jConfigListener.
    
 *** My understanding is that, Application Context in standalone Spring project == root Web Application Context in Spring MVC project 
-    
+--------------------------------------------------------------    
 3. Standalone Spring application typically utilizes the ApplicationContext interface that gives us access to the beans in the Spring IoC container and also includes other functionality.
+--------------------------------------------------------------
 4. A Spring web application usually utilizes the WebApplicationContext interface that extends the ApplicationContext interface.Like a standard ApplicationContext, we can use a WebApplicationContext to retrieve beans from a Spring container.
+--------------------------------------------------------------
 5. When using XML configuration files in a Spring web application, the actual WebApplicationContext implementation class is the XmlWebApplicationContext class.
+--------------------------------------------------------------
 6.  Root 
     Web Application Context  -----> Services,DAO
     
     Displatcher Servlet 
     Web Application COntext  -----> Controllers
-   
+ -------------------------------------------------------------- 
  7. DispatcherServlet and the ContextLoaderListener both take contextConfigLocation values. However, in the case of the ContextLoaderListener, this is a <context-param>, whereas in the case of the DispatcherServlet, this is an <init-param>.
-    -> Context Loader Listener will create only one (web) application context from multiple files in the web application.   
+    -> Context Loader Listener will create only one (web) application context from multiple files in the web application. 
+ --------------------------------------------------------------
 8. If you have a simple Spring MVC application, you could even have a situation where you don’t have a root WebApplicationContext. A DispatcherServlet would still have its own WebApplicationContext, but it doesn’t actually need to have a parent root WebApplicationContext
+--------------------------------------------------------------
 9. Specify root Web application context in sring mvc
      <context-param>
         <param-name>contextConfigLocation</param-name>
@@ -32,7 +38,7 @@
 
 References :
 http://www.deroneriksson.com/tutorials/java/spring/introduction-to-the-spring-framework/configuring-root-web-application-context-in-spring-web-application
-
+--------------------------------------------------------------
 10. @COMPONENT
 If we mark a class with @Component or one of the other Stereotype annotations these classes will be auto-detected using classpath scanning.
 @Component - is generic and can be used across application.
@@ -41,23 +47,30 @@ If we mark a class with @Component or one of the other Stereotype annotations th
 @Repository – annotate classes at persistence layer, which will act as database repository.
 @Configuration - Indicates that a class declares one or more @Bean methods and may be processed by the Spring container to generate bean definitions and service requests for those beans at runtime
 @Bean - Indicates that a method produces a bean to be managed by the Spring container.
+
+@Configuration : 
+Annotating a class with the @Configuration annotation indicates that the class will be used by JavaConfig as a source of bean definitions. An application may make use of just one @Configuration-annotated class, or many. @Configuration can be considered the equivalent of XML's <beans/> element. Like <beans/>, it provides an opportunity to explicitly set defaults for all enclosed bean definitions.
+
+@Bean
+@Bean is a method-level annotation and a direct analog of the XML <bean/> element.
+--------------------------------------------------------------
 11. Spring-DAO   vs  Spring-JDBC  vs  Spring-ORM  vs  Spring-Data
 https://stackoverflow.com/questions/24990400/spring-dao-vs-spring-orm-vs-spring-jdbc
  -> Spring DAO(Data Access Object): for database operations using DAO pattern. This is generalized concept to access JDBC and Hibernate, iBatis, JPA, JDO using it's individual Support classes. And it provides generalized exception hierarchy by defining @Repository annotation 
  -> Spring-JDBC provides the JdbcTemplate class, that removes plumbing code and helps you concentrate on the SQL query and parameters. You just need to configure it with a DataSource
  -> Spring-ORM is an umbrella module that covers many persistence technologies, namely JPA, JDO, Hibernate and iBatis.For each technology, the configuration basically consists in injecting a DataSource bean into some kind of SessionFactory or EntityManagerFactory etc. bean. For pure JDBC, there's no need for such integration classes (apart from JdbcTemplate), as JDBC only relies on a DataSource.
  -> Spring-Data is an umbrella project that provides a common API to define how to access data (DAO + annotations) in a more generic way, covering both SQL and NOSQL data sources.
- 
+-------------------------------------------------------------- 
 12.DriverManagerDataSource doesn't provide pooling, use for testing purposes only. straight from the docs
     - http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/#jdbc-introduction
     
-    
+--------------------------------------------------------------    
 13.Generate service classes from wsdl
 wsimport -s . -p com.baeldung.jaxws.server.topdown employeeservicetopdown.wsdl
 Command line options used: -p specifies the target package. -s specifies where to put the generated source files.
-
+--------------------------------------------------------------
 14. @EnableTransactionManagement and <tx:annotation-driven/> only looks for @Transactional on beans in the same application context they are defined in. This means that, if you put annotation driven configuration in a WebApplicationContext for a DispatcherServlet, it only checks for @Transactional beans in your controllers, and not your services.
-
+--------------------------------------------------------------
 15. TO avoid connection pool create datasource from DriverManagerDataSource
     TO create connection pool from Apache DBCP create datasource from BasicDataSource
     
@@ -70,5 +83,16 @@ Command line options used: -p specifies the target package. -s specifies where t
 		dataSource.setPassword(env.getRequiredProperty("jdbc.password"));
 		return dataSource;
 	}
-	
+--------------------------------------------------------------	
 16. JSP files in a directory under the 'WEB-INF' directory so there can be no direct access by clients
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+--------------------------------------------------------------
+--------------------------------------------------------------
+--------------------------------------------------------------
+--------------------------------------------------------------
+--------------------------------------------------------------
+--------------------------------------------------------------
+--------------------------------------------------------------
+--------------------------------------------------------------
