@@ -131,7 +131,33 @@ You have two ways to generate beans. One is to create a class with an annotation
       -> We cannot create a bean of a class using @Component, if the class is outside spring container whereas we can create a bean 
          of a class using @Bean even if the class is present outside the spring container.
       -> @Component has different specializations like @Controller, @Repository and @Service whereas @Bean has no specializations.
-
+      
+      
+      -> @Component Preferable for component scanning and automatic wiring.
+         When should you use @Bean?
+         Sometimes automatic configuration is not an option. When? Let's imagine that you want to wire components from 3rd-party 
+         libraries (you don't have the source code so you can't annotate its classes with @Component), so automatic configuration is 
+         not possible.
+         The @Bean annotation returns an object that spring should register as bean in application context. The body of the method 
+         bears the logic responsible for creating the instance.
+      
+         Let's consider I want specific implementation depending on some dynamic state. @Bean is perfect for that case.
+      
+		@Bean
+		@Scope("prototype")
+		public SomeService someService() {
+		    switch (state) {
+		    case 1:
+			return new Impl1();
+		    case 2:
+			return new Impl2();
+		    case 3:
+			return new Impl3();
+		    default:
+			return new Impl();
+		    }
+		}
+	However there is no way to do that with @Component.
 --------------------------------------------------------------
 --------------------------------------------------------------
 --------------------------------------------------------------
