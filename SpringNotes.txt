@@ -86,6 +86,51 @@ Command line options used: -p specifies the target package. -s specifies where t
 --------------------------------------------------------------	
 16. JSP files in a directory under the 'WEB-INF' directory so there can be no direct access by clients
 --------------------------------------------------------------
+17. Difference between using @Bean and @Component to define beans
+
+You have two ways to generate beans. One is to create a class with an annotation @Component. The other is to create a method and annotate it with @Bean. For those classes containing method with @Bean should be annotated with @Configuration Once you run your spring project, the class with a @ComponentScan annotation would scan every class with @Component on it, and restore the instance of this class to the Ioc Container. Another thing the @ComponentScan would do is running the methods with @Bean on it and restore the return object to the Ioc Container as a bean. So when you need to decide which kind of beans you want to create depending upon current states, you need to use @Bean. You can write the logic and return the object you want. Another thing worth to mention is the name of the method with @Bean is the default name of bean.
+
+
+1. -> @Component (@Controller and @Service and @Repository) are used to auto-detect and auto-configure beans using classpath scanning.
+   -> @Bean is used to explicitly declare a single bean, rather than letting Spring do it automatically
+   
+2. -> @Component :  There's an implicit one-to-one mapping between the annotated class and the bean (i.e. one bean per class). 
+   -> @Bean : It decouples the declaration of the bean from the class definition, and lets you create and configure beans exactly 
+      how you choose.
+3. -> @Component : This stereotype annotation is  class level annotations.
+   -> @Bean : This stereotype annotation is method level annotations.
+   
+4. -> Control  of wiring is quite limited with this approach, since it's purely declarative
+
+		@Controller
+		public class HomeController {
+		    public String home(){
+			return "Hello, World!";
+		    }
+		}
+    -> We have a little more control over how the bean is defined
+    
+    		@Configuration
+		public class ApplicationConfig {
+		    @Bean
+		    public User superUser() {            // Name of bean = superUser = name of method
+			return new User("Dan","Vega");   //  See we can put in any constructor in here. we have control
+		    }
+		}
+        The name of the method is actually going to be the name of our bean
+	
+	
+      -> @Component auto detects and configures the beans using classpath scanning whereas @Bean explicitly declares a single 
+         bean,  rather than letting Spring do it automatically.
+      -> @Component does not decouple the declaration of the bean from the class definition where as @Bean decouples the declaration 
+         of the bean from the class definition.
+      -> @Component is a class level annotation where as @Bean is a method level annotation and name of the method serves as the 
+         bean name.
+      -> @Component need not to be used with the @Configuration annotation where as @Bean annotation has to be used within the 
+         class which is annotated with @Configuration.
+      -> We cannot create a bean of a class using @Component, if the class is outside spring container whereas we can create a bean 
+         of a class using @Bean even if the class is present outside the spring container.
+      -> @Component has different specializations like @Controller, @Repository and @Service whereas @Bean has no specializations.
 
 --------------------------------------------------------------
 --------------------------------------------------------------
