@@ -1,1 +1,10 @@
 
+-> Differerene between ${exp}  and *{exp}
+  1. -> ${exp} are variable expressions - OGNL expressions ; when used in spring they are SpEL expressions.
+        For e: ${spitter}, it resolves to model property whose key is spitter.
+     -> *{exp} are selection expressions
+     
+  2. -> ${exp} are evaluated against the entire SpEL context
+     -> *{exp} are evaluated on a selected object.
+        In case of the form, the selected object is the one given in the <form> tag's th:object a "Spitter" object from the model.
+        Therefore the *{firstName} expression evaluates to the firstName property on the Spitter object
