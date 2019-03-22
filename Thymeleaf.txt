@@ -9,6 +9,9 @@
           In case of the form, the selected object is the one given in the <form> tag's th:object a "Spitter" object from the model.
           Therefore the *{firstName} expression evaluates to the firstName property on the Spitter object
         
- --> Thymeleaf enables the creation of natural templates that are still pure HTML and can be edited and viewed in the raw as if they were      static HTML, but stil render dynamic model data at runtime.
+--> Thymeleaf enables the creation of natural templates that are still pure HTML and can be edited and viewed in the raw as if they were       static HTML, but stil render dynamic model data at runtime.
     <input type = "text" value = "Anveshan" th:field="*{name}"  />
       So at static time, value is displayed and at runtime th:value is displayed
+
+-->  th:field attribute, referring to, say for ex, firstName field, gets both value attribute set to "value" of firstName and also 
+     a "name" attribute set to firstName
