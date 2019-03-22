@@ -1,1 +1,27 @@
 https://www.quora.com/What-are-the-interview-questions-for-a-software-development-position-at-D-E-Shaw-like
+
+D-E-Shaw
+1. Save all leaf nodes of a Binary tree in a Doubly Linked List by using Right node as Next node and Left Node as Previous Node.
+2. Given an array,find the maximum j – i such that arr[j] > arr[i]
+3. Remove Alternate Duplicate characters from a char array you have to do it in Place.Like keeping only the odd occurences of each   character.
+
+        Example: Input: “you got beautiful eyes”
+        Output: ”you gtbeaiful es”
+        Allowed Time Complexity was O(n) and Space Complexity was O(1)
+4. In a file there are 1 million words . Find 10 most frequent words in that file.
+5. Find all nodes at k-distance from a given node in a binary tree
+6. Clone a linked list with next and random pointer
+7. Serialise and Deserialise a linked list with next and random pointer.
+8. Construct a binary tree from given inorder and preorder traversals.
+9. Return a tree such that each internal node stores sum of all its child nodes. Each leaf node stores zero.
+10. How will you implement linked list with 1 million nodes? How will you access 999999 th node? Give some optimal design strategy and implementation.
+11. Reversal of Linked List in groups of K.
+12. Given a positive integer N, count all possible distinct binary strings of length N such that there are no consecutive 1’s.
+13. Check whether given binary tree is balanced or not. Definition was no two leaves should have height difference of greater than one.
+14. Remove duplicates from string in place in O(n).
+15. Connect nodes on same level in a binary tree.
+16. Find sum of data of all leaves of a binary tree on same level and then multiply sums obtained of all levels.
+17. Given a matrix of characters and a word.
+18. you have to count the number of occurrences of that word in that matrix. you can move to any of the eight valid directions from current position.
+
+---------------------------------------------------------------------------------------
