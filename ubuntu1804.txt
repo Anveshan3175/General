@@ -92,7 +92,21 @@ Install Java:
    >> systemctl start mysql           // To start the service run
    >> mysql -u root -p                // To login to your database engine
    ------------------------------------------------------------
+  9. set title script
+   >> gedit ~/.bashrc
    
+   Add below script:
+   
+   set-title(){
+      ORIG=$PS1
+      TITLE="\e]2;$@\a"
+      PS1=${ORIG}${TITLE}
+   }
+   
+   open new terminal and set title with below command :
+   >> set-title "my awesome terminal title"
+   ------------------------------------------------------------  
+
    
    
    
