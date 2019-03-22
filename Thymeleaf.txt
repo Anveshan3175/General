@@ -1,10 +1,14 @@
 
--> Differerene between ${exp}  and *{exp}
-  1. -> ${exp} are variable expressions - OGNL expressions ; when used in spring they are SpEL expressions.
+--> Differerene between ${exp}  and *{exp}
+    1. -> ${exp} are variable expressions - OGNL expressions ; when used in spring they are SpEL expressions.
         For e: ${spitter}, it resolves to model property whose key is spitter.
-     -> *{exp} are selection expressions
+       -> *{exp} are selection expressions
      
-  2. -> ${exp} are evaluated against the entire SpEL context
-     -> *{exp} are evaluated on a selected object.
-        In case of the form, the selected object is the one given in the <form> tag's th:object a "Spitter" object from the model.
-        Therefore the *{firstName} expression evaluates to the firstName property on the Spitter object
+    2. -> ${exp} are evaluated against the entire SpEL context
+       -> *{exp} are evaluated on a selected object.
+          In case of the form, the selected object is the one given in the <form> tag's th:object a "Spitter" object from the model.
+          Therefore the *{firstName} expression evaluates to the firstName property on the Spitter object
+        
+ --> Thymeleaf enables the creation of natural templates that are still pure HTML and can be edited and viewed in the raw as if they were      static HTML, but stil render dynamic model data at runtime.
+    <input type = "text" value = "Anveshan" th:field="*{name}"  />
+      So at static time, value is displayed and at runtime th:value is displayed
