@@ -107,7 +107,22 @@ Install Java:
    >> set-title "my awesome terminal title"
    ------------------------------------------------------------  
 
-   
+  #!/bin/bash
+
+echo "Hello World"
+#gnome-terminal --tab  -e "bash -c \"echo foo; echo bar; exec bash\""
+#set-title "eclipse"
+# /opt/eclipse/eclipse&
+
+#gnome-terminal --tab
+#set-title "git"
+#cd eclipseWS/Spring
+
+gnome-terminal --tab  -e "bash -c \"sudo su; cd /opt/tomcat9/bin; set JPDA_ADDRESS=8000; exec bash\""
+
+#gnome-terminal --tab  -e "\"/opt/eclipse/eclipse\""
+#gnome-terminal --tab  -e "bash -c \"cd /home/anveshan/eclipseWS/Spring; git init; exec bash\""
+ 
    
    
    
