@@ -1,1 +1,22 @@
 
+--> JavaScript Engines can now run Enterprise Node aplications. They have evolved a lot over 22 years
+--> JS is dynamically typed whereas C++ is statically typed. We need to understand char,int,long before we need to use them.
+--> JS is easy to work with objects. We don't need to know all properties in the objects in case of JS. We can add properties, delete properties
+
+var obj = {
+    x:1,
+    y:2
+};
+
+delete obj.x
+
+obj.z = 5
+  -> Sometimes it is impossible to know what will be your object be like. If you get a bunch of json over the net and you turn this into object,we 
+     don't know what the properties will be like. So for developers, it will make like easier. But for compiler, this is not good. You give so little 
+	 information to compiler that compilers will have hard time generating machine code that is fast. In C++, the compiler generates fasst machine code.
+
+--> JS is fast even though it is dynamically typed.All JS engines use JIT. JIT means we compile the source code just in time as we need it,we collect 
+    the information when we run it and we recompile the source code. IN c++ we compile ahead of time.
+	-> For example in Node js, the compilation and execution goes at the same time and there is feedback going on back ad forth to speed up the execution.
+
+--> Modern engines have atleast 2 compilers - one of them is optimizing compiler.OPtimizing compiler recompiles the hot functions.
