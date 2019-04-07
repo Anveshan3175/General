@@ -22,3 +22,9 @@ obj.z = 5
 --> Modern engines have atleast 2 compilers - one of them is optimizing compiler.OPtimizing compiler recompiles the hot functions.
 --> Optmizing compiler uses previously seen type information. So dont keep on changing type as it is performance hit.Always use objects of     same type.
 --> Write the code that looks like statically typed so that JIT optimization has its say in performance 
+
+Node Js
+----------------------------------------------------------------------------------------------------------------------------------------
+Node js course in GIT : PacktPublishing/BuildingAPIDEvelopmentWithNode.js
+
+
