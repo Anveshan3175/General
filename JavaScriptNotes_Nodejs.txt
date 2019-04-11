@@ -33,4 +33,5 @@ Node js course in GIT : PacktPublishing/BuildingAPIDEvelopmentWithNode.js
 
 --> Most functions take last argument as callback function
 --> __dirname  gives current directory
+--> callbacks are the fuctions that are exected asynchronously at a later point of time
 
