@@ -32,4 +32,5 @@ Node js course in GIT : PacktPublishing/BuildingAPIDEvelopmentWithNode.js
   https://github.com/PacktPublishing/BuildingAPIDevelopmentwithNode.js
 
 --> Most functions take last argument as callback function
+--> __dirname  gives current directory
 
