@@ -37,4 +37,5 @@ Node js course in GIT : PacktPublishing/BuildingAPIDEvelopmentWithNode.js
 --> An Asynchronous function will have callback as argument. Not the Synchrous function.
 --> The callback function accepts two arguments -> error and data. The data is output of the main function and error object likewise is 
     the error occurred during the execution of main function.
+--> Essentially, a promise is a returned object to which you attach callbacks, instead of passing callbacks into a function.
 
