@@ -90,3 +90,5 @@ Change username in the build.sql
 TO reset password :
 alter user <username> identified by <password>;
 alter user hib identified by hib;
+
+select owner, object_name, object_type from ALL_OBJECTS where object_name = 'ABANDON_TRANSACTION';
