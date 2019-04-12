@@ -92,3 +92,4 @@ alter user <username> identified by <password>;
 alter user hib identified by hib;
 
 select owner, object_name, object_type from ALL_OBJECTS where object_name = 'ABANDON_TRANSACTION';
+select * from user_objects where lower(object_name) = 'abandon_transaction';
