@@ -43,3 +43,5 @@ Node js course in GIT : PacktPublishing/BuildingAPIDEvelopmentWithNode.js
     the error occurred during the execution of main function.
 --> Essentially, a promise is a returned object to which you attach callbacks, instead of passing callbacks into a function.
 
+--> Node commands
+    npm init -y   // This creates package.json
