@@ -46,3 +46,5 @@ Node js course in GIT : PacktPublishing/BuildingAPIDEvelopmentWithNode.js
 --> Node commands
     npm init -y   // This creates package.json
     npn install   // To install dependancies defined in package.json
+    node server.js //run the js file
+    nodemon server.js // run using nodemon
