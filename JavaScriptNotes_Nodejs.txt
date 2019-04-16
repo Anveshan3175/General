@@ -42,6 +42,7 @@ Node js course in GIT : PacktPublishing/BuildingAPIDEvelopmentWithNode.js
 --> The callback function accepts two arguments -> error and data. The data is output of the main function and error object likewise is 
     the error occurred during the execution of main function.
 --> Essentially, a promise is a returned object to which you attach callbacks, instead of passing callbacks into a function.
-
+--> package.json has dependancy information
 --> Node commands
     npm init -y   // This creates package.json
+    npn install   // To install dependancies defined in package.json
