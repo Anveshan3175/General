@@ -24,7 +24,11 @@ obj.z = 5
 --> Write the code that looks like statically typed so that JIT optimization has its say in performance 
 
 --> Javascript treats any function as object. We can pass function as an argument in another function
-
+--> Pass a function, but don’t run it
+    // wrong!
+    setTimeout(sayHi(), 1000);
+    
+    
 
 Node Js
 ----------------------------------------------------------------------------------------------------------------------------------------
