@@ -28,7 +28,46 @@ obj.z = 5
     // wrong!
     setTimeout(sayHi(), 1000);
 --> In compiled languages, a constant will be replaced at compile-time and its use will allow for other optimizations like dead code removal to further increase the runtime efficiency of the code. Recent (loosely used term) JavaScript engines actually compile JS code to get better performance, so using the const keyword would inform them that the optimizations described above are possible and should be done. This results in better performance. 
-    
+
+--> var vs let vs const
+var: Declare a variable, value initialization optional.
+let: Declare a local variable with block scope.
+const: Declare a read-only named constant
+
+var a;
+a = 1;
+a = 2;//re-initialize possible
+var a = 3;//re-declare
+console.log(a);//3
+
+let b;
+b = 5;
+b = 6;//re-initiliaze possible
+// let b = 7; //re-declare not possible
+console.log(b);
+
+// const c;
+// c = 9;   //initialization and declaration at same place
+const c = 9;
+// const c = 9;// re-declare and initialization is not possible
+console.log(c);//9
+// NOTE: Constants can be declared with uppercase or lowercase, but a common
+// convention is to use all-uppercase letters.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Node Js
 ----------------------------------------------------------------------------------------------------------------------------------------
