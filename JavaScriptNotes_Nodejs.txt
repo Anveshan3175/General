@@ -27,7 +27,7 @@ obj.z = 5
 --> Pass a function, but don’t run it
     // wrong!
     setTimeout(sayHi(), 1000);
-    
+--> In compiled languages, a constant will be replaced at compile-time and its use will allow for other optimizations like dead code removal to further increase the runtime efficiency of the code. Recent (loosely used term) JavaScript engines actually compile JS code to get better performance, so using the const keyword would inform them that the optimizations described above are possible and should be done. This results in better performance. 
     
 
 Node Js
