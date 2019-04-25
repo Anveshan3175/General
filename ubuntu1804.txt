@@ -106,24 +106,72 @@ Install Java:
    open new terminal and set title with below command :
    >> set-title "my awesome terminal title"
    ------------------------------------------------------------  
-
+ 10. Scripts
   #!/bin/bash
 
-echo "Hello World"
-#gnome-terminal --tab  -e "bash -c \"echo foo; echo bar; exec bash\""
-#set-title "eclipse"
-# /opt/eclipse/eclipse&
+   echo "Hello World"
+   #gnome-terminal --tab  -e "bash -c \"echo foo; echo bar; exec bash\""
+   #set-title "eclipse"
+   # /opt/eclipse/eclipse&
 
-#gnome-terminal --tab
-#set-title "git"
-#cd eclipseWS/Spring
+   #gnome-terminal --tab
+   #set-title "git"
+   #cd eclipseWS/Spring
 
-gnome-terminal --tab  -e "bash -c \"sudo su; cd /opt/tomcat9/bin; set JPDA_ADDRESS=8000; exec bash\""
+   gnome-terminal --tab  -e "bash -c \"sudo su; cd /opt/tomcat9/bin; set JPDA_ADDRESS=8000; exec bash\""
 
-#gnome-terminal --tab  -e "\"/opt/eclipse/eclipse\""
-#gnome-terminal --tab  -e "bash -c \"cd /home/anveshan/eclipseWS/Spring; git init; exec bash\""
- 
+   #gnome-terminal --tab  -e "\"/opt/eclipse/eclipse\""
+   #gnome-terminal --tab  -e "bash -c \"cd /home/anveshan/eclipseWS/Spring; git init; exec bash\""
+
+   ------------------------------------------------------------
+11.Install NodeJS:
+
+   Download tar from https://nodejs.org/en/
+   >> sudo tar -xJvf node-v10.15.3-linux-x64.tar.xz
+
+   >> gedit ~/.profile
+   export NODEJS_HOME=/opt/node-v10.15.3-linux-x64/bin
+   export PATH=$NODEJS_HOME:$PATH
+
+   //refresh profiles
+   >> . ~/.profile
+
+   >> gedit ~/.bashrc
+   export NODEJS_HOME=/opt/node-v10.15.3-linux-x64/bin
+   export PATH=$NODEJS_HOME:$PATH  
+   ------------------------------------------------------------
+12.Visual Studio Code
+   https://code.visualstudio.com/download
+   >> sudo tar -xvf code-stable-1554971043.tar.gz
    
+   // Start VSC
+   >> /opt/VSCode-linux-x64/bin/code
+   // to run nodemon from cmd in VSC
+   >> npx nodemon hello./js
+   ------------------------------------------------------------
+13.MongoDb
+   https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu-tarball/
+   >> sudo tar -zxvf mongodb-linux-x86_64-ubuntu1604-4.0.9.tgz
+
+   >> gedit ~/.bashrc
+   export PATH=/opt/mongodb-linux-x86_64-ubuntu1604-4.0.9/bin:$PATH
+
+   >> sudo apt-get install libcurl3
+
+   In the home folder create below
+   >> sudo mkdir -p mongodb/data/db
+   >> sudo mkdir -p mongodb/var/log/mongodb
+
+   >> sudo chmod 777 mongodb/data/db
+   >> sudo chmod 777 mongodb/var/log/mongodb
+   >> sudo chmod 777 mongodb/var/log/mongodb/mongodb.log
+
+   >> gedit mongodb/var/log/mongodb/mongodb.log
+
+   to start
+   >> mongod --dbpath mongodb/data/db --logpath mongodb/var/log/mongodb/mongod.log --fork
+   >> mongo
+   ------------------------------------------------------------
    
    
  
