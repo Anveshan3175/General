@@ -1,5 +1,11 @@
-
+Links:
 
 To see all devices connected to USB : lsusb
-
 http://garyhall.org.uk/raspberry-pi-internet-enabled-camera.html
+
+Learning:
+https://learning.oreilly.com/library/view/learn-electronics-with/9781484218983/A417997_1_En_1_Chapter.html  // safari
+https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-002-circuits-and-electronics-spring-2007/video-lectures/lecture-1/   
+https://www.youtube.com/watch?v=r-X9coYTOV4&list=PLah6faXAgguOeMUIxS22ZU4w5nDvCl5gs 
+
+---------------------------------------------------------------------------------------------------------------------------------------
