@@ -8,4 +8,13 @@ https://learning.oreilly.com/library/view/learn-electronics-with/9781484218983/A
 https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-002-circuits-and-electronics-spring-2007/video-lectures/lecture-1/   
 https://www.youtube.com/watch?v=r-X9coYTOV4&list=PLah6faXAgguOeMUIxS22ZU4w5nDvCl5gs 
 
+setup SD card
+https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up/3
 ---------------------------------------------------------------------------------------------------------------------------------------
+--> Rasberry pi 3 model B  is what I am using.
+
+--> How to start Raspberry pi ?
+    -> Connect to HDMI cable to Raspberry and monitor
+    -> Give wireless mouse and keyboard with USB
+    -> Give power connection
+    -> Raspberry will start and you can see in monitor
