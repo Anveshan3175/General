@@ -85,6 +85,8 @@ systemctl start mysql  -- To start the service run
 
 set-title "mysql"
 mysql -u root -p       -- To login to your database engine
+\! ls -l
+\! clear
 
 https://docs.spring.io/spring/docs/current/spring-framework-reference/data-access.html#jdbc-datasource
 ------------------------------------------------------------
