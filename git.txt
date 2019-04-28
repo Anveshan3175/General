@@ -132,10 +132,17 @@ Now we try to clone one repository from Github and work on it. So Github, here i
  git commit --amend -m "another.."  --- This is to rectify the last comment
  git status             --- This will tell us that local master is ahead of remote master by one commit
  git pull origin master --- If there any changes in the remote master, pul them to local first and then push 
-                            your changes to remote
+               cd TestGIT             your changes to remote
  git push origin master --- Send canges in local master to remote master
  
- 
+ -- Node repo in Github and local
+ 1. created repository : node
+ 2. Created a directory named : node
+    mkdir node
+    cd node
+    git init
+    git clone https://github.com/Anveshan3175/node.git .  --- create and track the project locally
+    git status
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
  Summarize working with GIT once initialized
  cd /eclipseWS/Spring
