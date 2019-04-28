@@ -1,1 +1,173 @@
+Download java installation tar file from oracle website
+cd /opt
+sudo tar -xvzf jdk-11.0.1_linux-x64_bin.tar.gz
+
+Add to path:
+go to home:
+cd ~
+gedit .bashrc
+add below lines:
+export PATH=$PATH:/opt/jdk-11.0.1/bin
+export JAVA_HOME=/opt/jdk-11.0.1
+
+To enable New document, in the terminal 
+touch ~/Templates/EmptyDocument\ Document
+
+http://localhost:8080/j2eeTemplate/jsp/login.jsp
+sudo /opt/tomcat9/bin/startup.sh
+
+sudo cp /home/anveshan/eclipseWS/j2ee/j2eeTemplate/target/j2eeTemplate.war /opt/tomcat9/webapps/
+sudo cp /home/anveshan/eclipseWS/Spring/intv/target/intv.war /opt/tomcat9/webapps/
+
+{salutations="Hello From Properties", salutations.en="Hello From Properties"}
+
+http://localhost:8080/intv/spr/login
+--------------------------------------------------------------
+GIT:
+
+set-title "git"
+cd eclipseWS/Spring
+git init
+git status
+git add intv/src/main/java/   -- you can include NEW,DELETED,MODIFIED files to staging here
+git commit -m "all src files"
+git push origin master
+akunduru4@gmail.com
+Nan123du
+cp mysql-apt-config_0.8.10-1_all.deb /opt/
+
+cd eclipseWS/j2ee
+anveshan@anveshan:~/eclipseWS/j2ee$
+git init
+git add <file name>
+git commit -m "<comments>" 
+git push origin master
+akunduru4@gmail.com
+Nan123du
+------------------------------------------------------------
+Eclipse
+>> set-title "eclipse"
+/opt/eclipse/eclipse&
+------------------------------------------------------------
+Tomcat debug:
+set-title "tomcat"
+1. Open a console
+2. sudo su
+3. cd /opt/tomcat9/bin
+4. set JPDA_ADDRESS=8000
+5. set JPDA_TRANSPORT=dt_socket
+7. ./catalina.sh jpda run&
+8. sudo /opt/tomcat9/bin/shutdown.sh
+9. sudo cp /home/anveshan/eclipseWS/Spring/intv/target/intv.war /opt/tomcat9/webapps/
+Go to the tomcat home folder
+
+sudo su
+chmod 777 -R /opt/tomcat9/logs
+cd /opt/tomcat9/logs
+------------------------------------------------------------
+
+mysql to check status
+sudo systemctl status mysql
+
+wget -c https://dev.mysql.com/get/mysql-apt-config_0.8.10-1_all.deb
+sudo cp mysql-apt-config_0.8.10-1_all.deb /opt/
+sudo dpkg -i mysql-apt-config_0.8.10-1_all.deb
+select and click on <OK>
+sudo apt-get update
+sudo apt-get install mysql-server
+give password : anvesh
+<ok>
+<strongly Recommended>
+sudo mysql_secure_installation
+systemctl status mysql-server -- To check status of server
+systemctl stop mysql   -- To stop the service run
+systemctl start mysql  -- To start the service run
+
+set-title "mysql"
+mysql -u root -p       -- To login to your database engine
+
+https://docs.spring.io/spring/docs/current/spring-framework-reference/data-access.html#jdbc-datasource
+------------------------------------------------------------
+
+
+https://github.com/priyatam/springmvc-bootstrap/blob/master/src/main/webapp/WEB-INF/views/form.jsp
+https://dzone.com/articles/spring-mvc-example-for-user-registration-and-login-1
+http://www.mkyong.com/spring-mvc/spring-mvc-form-handling-example/
+
+
+
+what is chesion
+Cohesion is developing each module with specific functionality
+
+------------------------------------------------------------
+
+----> Install Node:
+
+Download tar from https://nodejs.org/en/
+sudo tar -xJvf node-v10.15.3-linux-x64.tar.xz
+
+gedit ~/.profile
+export NODEJS_HOME=/opt/node-v10.15.3-linux-x64/bin
+export PATH=$NODEJS_HOME:$PATH
+
+//refresh
+. ~/.profile
+
+gedit ~/.bashrc
+export NODEJS_HOME=/opt/node-v10.15.3-linux-x64/bin
+export PATH=$NODEJS_HOME:$PATH
+
+
+----> Visual Studio Code
+https://code.visualstudio.com/download
+sudo tar -xvf code-stable-1554971043.tar.gz
+
+start visual studio code
+/opt/VSCode-linux-x64/bin/code
+
+nodemon
+npx nodemon hello
+
+----> MongoDb
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu-tarball/
+sudo tar -zxvf mongodb-linux-x86_64-ubuntu1604-4.0.9.tgz
+
+gedit ~/.bashrc
+export PATH=/opt/mongodb-linux-x86_64-ubuntu1604-4.0.9/bin:$PATH
+
+sudo apt-get install libcurl3
+
+In the home folder create below
+sudo mkdir -p mongodb/data/db
+sudo mkdir -p mongodb/var/log/mongodb
+
+sudo chmod 777 mongodb/data/db
+sudo chmod 777 mongodb/var/log/mongodb
+
+gedit mongodb/var/log/mongodb/mongodb.log
+
+to start
+mongod --dbpath mongodb/data/db --logpath mongodb/var/log/mongodb/mongod.log --fork
+
+mongo
+
+---->
+
+
+---->
+
+
+---->
+
+
+---->
+
+
+
+
+
+
+
+
+
 
