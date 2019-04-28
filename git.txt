@@ -110,7 +110,7 @@ Now we try to clone one repository from Github and work on it. So Github, here i
  cd gitrepos
  mkdir TestGIT
  cd TestGIT
- -- Directly clone now instead of doing git init
+ git init
  git clone https://github.com/Anveshan3175/TestGIT.git .    --- create and track the project locally
  git status
 
@@ -140,7 +140,7 @@ Now we try to clone one repository from Github and work on it. So Github, here i
  2. Created a directory named : node
     mkdir node
     cd node
-    git init
+    -- Directly clone now instead of doing git init
     git clone https://github.com/Anveshan3175/node.git .  --- create and track the project locally
     git status
     git remote add origin https://github.com/Anveshan3175/node.git
