@@ -129,6 +129,11 @@ start visual studio code
 
 nodemon
 npx nodemon hello
+ "scripts": {
+    "start": "node index",
+    "dev":"nodemon index"  
+  },
+npm run dev
 
 ----> MongoDb
 https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu-tarball/
