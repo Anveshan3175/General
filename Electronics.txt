@@ -1,6 +1,12 @@
 
 1. Electronic components videos :
     -> https://www.youtube.com/watch?v=6Maq5IyHSuc&t=309s
+       -> Flow of water in a pipe = current
+       -> Pressure of water = voltage
+       -> thinning of pipe offers resistance = Resistance
     
 2. Simple Capacitor charging and discharging circuit
     -> https://www.youtube.com/watch?v=qqo7MTVksmo
+    
+3. DIY in youtube
+    -> https://www.youtube.com/channel/UCi6ZqREHDIx2xLrCRkrRS0w/videos
