@@ -1,3 +1,6 @@
 
 1. Electronic components videos :
     -> https://www.youtube.com/watch?v=6Maq5IyHSuc&t=309s
+    
+2. Simple Capacitor charging and discharging circuit
+    -> https://www.youtube.com/watch?v=qqo7MTVksmo
