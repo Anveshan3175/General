@@ -157,7 +157,10 @@ to start
 mongod --dbpath mongodb/data/db --logpath mongodb/var/log/mongodb/mongod.log --fork
 
 mongo
-
+show dbs
+use "your db"
+show collections
+db."your collection".find.pretty()
 ---->
 
 
