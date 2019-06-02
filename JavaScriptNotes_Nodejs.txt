@@ -91,3 +91,26 @@ https://nodejs.org/en/docs/
     npn install   // To install dependancies defined in package.json
     node server.js //run the js file
     nodemon server.js // run using nodemon
+
+
+
+Angular js (https://cli.angular.io/)
+------------------------------------------------------------------------------------------------------------------------------------
+
+--> Global installation
+    > npm install -g @angular/cli
+    > ng new my-dream-app
+    > cd my-dream-app
+    > ng serve
+    > npm uninstall -g @angular/cli
+
+
+
+
+
+
+
+
+
+
+
