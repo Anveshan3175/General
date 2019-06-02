@@ -103,7 +103,8 @@ Angular js (https://cli.angular.io/)
     > cd my-dream-app
     > ng serve
     > npm uninstall -g @angular/cli
-
+If you have permission issues run
+--> sudo chmod 777 -R /opt
 
 
 
