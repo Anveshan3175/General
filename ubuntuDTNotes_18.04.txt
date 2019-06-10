@@ -160,7 +160,7 @@ mongo
 show dbs
 use "your db"
 show collections
-db."your collection".find.pretty()
+db."your collection".find().pretty()
 ---->
 
 
