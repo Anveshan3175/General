@@ -134,6 +134,7 @@ npx nodemon hello
     "dev":"nodemon index"  
   },
 npm run dev
+anveshan@anveshan:~/vStudioWS/epic-chat$ npx nodemon server/app.js
 
 ----> MongoDb
 https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu-tarball/
