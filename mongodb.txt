@@ -5,8 +5,8 @@
    > use rest
    > db.createUser(
      {
-       user: "mynewuser",
-       pwd: "myuser123",
+       user: "restuser",
+       pwd: "test123",
        roles: [ "readWrite", "dbAdmin" ]
      }
    );
