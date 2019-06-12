@@ -1,1 +1,13 @@
+-> create database
+   > use rest;  // creates database rest
+   
+-> create user
+   > use rest
+   > db.createUser(
+     {
+       user: "mynewuser",
+       pwd: "myuser123",
+       roles: [ "readWrite", "dbAdmin" ]
+     }
+   );
 
