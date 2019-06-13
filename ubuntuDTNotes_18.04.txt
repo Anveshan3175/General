@@ -136,6 +136,9 @@ npx nodemon hello
 npm run dev
 anveshan@anveshan:~/vStudioWS/epic-chat$ npx nodemon server/app.js
 
+Insomnia
+--------
+anveshan@anveshan:~$ /opt/Insomnia/insomnia
 ----> MongoDb
 https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu-tarball/
 sudo tar -zxvf mongodb-linux-x86_64-ubuntu1604-4.0.9.tgz
