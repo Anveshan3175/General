@@ -56,6 +56,14 @@ console.log(c);//9
 
 --> In JavaScript, objects provide a way for us to store, manipulate, and send data over the network.In JavaScript, think of objects as a collection of ‘key:value’ pairs. This brings to us the first and most popular way we create objects in JavaScript
 
+--> var myfunction = function(){
+    	console.log("Hello World")
+    }
+    > myfunction
+      [Function: myfunction]
+    > myfunction()
+      Hello World
+
 
 
 
