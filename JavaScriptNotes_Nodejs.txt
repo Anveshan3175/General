@@ -64,7 +64,18 @@ console.log(c);//9
     > myfunction()
       Hello World
 
-
+--> What is difference between .
+    var add = function(a,b){
+    	return a + b;
+    }
+    
+    function sum(a,b) {
+    	return a + b;
+    }
+    
+    add is anonymous function and is assigned to a variable
+    sum is function with a name.
+    -> Are there any differences ?
 
 
 
