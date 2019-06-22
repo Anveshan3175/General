@@ -73,6 +73,10 @@ console.log(c);//9
     	return a + b;
     }
     
+    var total = (a,b) => {
+    	return a + b
+    }
+    
     add is anonymous function and is assigned to a variable
     sum is function with a name.
     -> Are there any differences ?
