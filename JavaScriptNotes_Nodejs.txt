@@ -147,3 +147,4 @@ If you have permission issues run
 
 Express.js
 -------------------------------------------------------------------------------------------------------------------------------------
+body-parser extracts the entire body portion of an incoming request stream and exposes it on req.body as something easier to interface with
