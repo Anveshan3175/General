@@ -139,7 +139,7 @@ anveshan@anveshan:~/vStudioWS/epic-chat$ npx nodemon server/app.js
 
 Insomnia
 --------
-cc
+set-title "Insomnia"
 anveshan@anveshan:~$ /opt/Insomnia/insomnia
 ----> MongoDb
 https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu-tarball/
