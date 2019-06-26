@@ -145,6 +145,20 @@ Now we try to clone one repository from Github and work on it. So Github, here i
     git status
     git remote add origin https://github.com/Anveshan3175/node.git
     git pull origin master
+  
+   1. created repository : node
+   2. In the existing workspace, run clone command
+      git clone https://github.com/Anveshan3175/node.git
+   3. git status
+   4. touch .gitignore       --- ls -a
+   5. gedit .gitignore       --- Add node_modules/      Add *.bk in the ignore file
+   6. Move you untracked project into workspace if it not present
+   7. git add -A            -- Adds all untracked files ready to commit
+   8. git commit -m "init commit"
+   9. git push origin master
+    akunduru4@gmail.com
+    Nan123du  
+    
  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
  Summarize working with GIT once initialized
  cd /eclipseWS/Spring
