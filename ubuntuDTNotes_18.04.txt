@@ -1,3 +1,7 @@
+unix commands
+-> ls -a   // all hidden files
+
+-------------------------------------------------------------------------
 Download java installation tar file from oracle website
 cd /opt
 sudo tar -xvzf jdk-11.0.1_linux-x64_bin.tar.gz
