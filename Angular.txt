@@ -2,3 +2,6 @@ Angular CLI
 -> URL : https://cli.angular.io/
 -> Install CLI 
    > npm install -g @angular/cli
+-> Create new project in CLI
+   > ng new my-first-app   // Create new Angular project with required dependancies
+   > ng serve  // Start application server to run the build
