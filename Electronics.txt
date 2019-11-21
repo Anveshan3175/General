@@ -10,3 +10,8 @@
     
 3. DIY in youtube
     -> https://www.youtube.com/channel/UCi6ZqREHDIx2xLrCRkrRS0w/videos
+    
+4. Blogs in electric circuits
+    -> https://www.build-electronic-circuits.com/build-blinking-light-circuit/
+    -> https://ohmify.com/
+    -> https://electronicsclub.info/
