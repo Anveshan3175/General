@@ -18,3 +18,7 @@ https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up/3
     -> Give wireless mouse and keyboard with USB
     -> Give power connection
     -> Raspberry will start and you can see in monitor
+    
+ -------------------------------------------------------------------------------------------------------------------------------------
+ To write python script and execute it open IDLE for Python version -> New File -> Save -> Give name and location of file -> write 
+ script -> run module
