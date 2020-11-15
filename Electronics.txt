@@ -15,3 +15,7 @@
     -> https://www.build-electronic-circuits.com/build-blinking-light-circuit/
     -> https://ohmify.com/
     -> https://electronicsclub.info/
+    
+
+5. http://www.circuitbasics.com/555-timer-basics-astable-mode/
+   http://www.555-timer-circuits.com/flashing-led.html
