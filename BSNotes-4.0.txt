@@ -1,0 +1,54 @@
+﻿BS4 needs javascript.
+-> Jquery.js
+-> Popper.js
+-> Bootstrap.js
+
+Place the following <script>s near the end of your pages, right before the closing </body> tag, to enable them.
+jQuery must come first, then Popper.js, and then our JavaScript plugins
+
+--> Bootstrap requires the use of the HTML5 doctype
+
+<!doctype html>
+<html lang="en">
+  ...
+</html>
+
+--> Bootstrap is developed mobile first, a strategy in which we optimize code for mobile devices first and then scale up components as necessary using 
+CSS media queries. To ensure proper rendering and touch zooming for all devices, add the responsive viewport meta tag to your <head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+
+
+
+Why ‘mobile first’ is the new ‘responsive’
+You might or might not already be familiar with the term “responsive”. It is used to describe the possibility of websites adapting to various output 
+devices. The layout, fonts, image sizes etc. change and or scale according to the size of the browser. This principle enables good readability and 
+usability on desktops, tablets and smartphones. If you’re reading this on a desktop, you can see the effects of the responsiveness by scaling the 
+browser window. Make it very narrow to simulate the look of this site on a smartphone. This website shows some lovely examples of responsive website 
+behaviour.
+
+mobile-first-vs-responsive
+--------------------------
+This "responsive webdesign" has been around for a couple of years, and has been totally standard since at least 2012. Take your stuff and run, 
+if your web designer is not aware of the necessity to cover mobile devices with his design.
+
+But actually, it is well worth mentioning that the responsive behavior of websites is not the latest thing anymore. The latest buzz is: Mobile First. We’ll explore all the terminology in this article, and make clear the differences. Furthermore we’ll have a look at how it affects design workflow and communication with clients.
+
+Mobile First vs. Responsive
+The term “mobile first”, being very descriptive, already gives us a good hint of what to expect: primarily focusing on development for mobile devices. The common responsive approach works with the desktop browser as the basis, and offers alternative, scaled down versions for other device/browser sizes. That works via CSS media queries, which check the browser size and adjust the layout and styling according to that.
+
+Conceptually starting with displaying a website on mobile devices, rather than on a desktop, leads to a quite different approach on how to deal with content. Mobile first means content first. We love that. Fancy hover menus, sliders, flash-based animations – all the clutter is taken away at the beginning, and instead of focusing on effects what is being considered is how to display the content in the most rational way. If there is a need for a visually stunning web appearance, all the eye candy can of course be added, especially for desktop and tablet versions. But, to reiterate, where you start conceptually is a very minimalistic place.
+
+The approach of responsive web design is often more trivial. It simply hides certain objects or simplifies them for mobile users. But it’s still there. Often the javascripts and assets are still being loaded, and the designer’s mind has been occupied with all of them while approaching the project.
+
+--------------------------
+Doctype for html5 <!DOCTYPE html>
+
+https://getbootstrap.com/docs/4.2/getting-started/introduction/
+https://www.w3schools.com/bootstrap4/bootstrap_forms.asp
+
+https://www.bootstrapdash.com/bootstrap-4-tutorial/forms/
+https://bootsnipp.com/snippets/8ANqZ
