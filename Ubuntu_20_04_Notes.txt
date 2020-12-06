@@ -11,7 +11,8 @@ cat /etc/os-release
 
 Install Java 15
 ---------------
-
+-> open  from https://www.oracle.com/java/technologies/javase-jdk15-downloads.html
+-> Download JDK 15 file - jdk-15.0.1_linux-x64_bin.tar.gz
 
 
 https://java.tutorials24x7.com/blog/how-to-install-java-15-on-ubuntu-20-04-lts
