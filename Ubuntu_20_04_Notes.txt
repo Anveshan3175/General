@@ -1,6 +1,8 @@
 Install updates
 ---------------
-Open the Update Manager by pressing ‘Alt+F2’, then enter ‘update-manager’ and hit Enter.
+-> Open the Update Manager by pressing ‘Alt+F2’, then enter ‘update-manager’ and hit Enter.
+-> or from terminal :
+   $ sudo apt-get update && sudo apt-get dist-upgrade
 
 
 
