@@ -13,6 +13,17 @@ Install Java 15
 ---------------
 -> open  from https://www.oracle.com/java/technologies/javase-jdk15-downloads.html
 -> Download JDK 15 file - jdk-15.0.1_linux-x64_bin.tar.gz
+-> sudo mkdir -p /opt/java/oracle
+-> cp /home/anveshan/Downloads/jdk-15.0.1_linux-x64_bin.tar.gz .
+-> sudo tar -xzvf jdk-15.0.1_linux-x64_bin.tar.gz
+-> cd ~
+-> gedit .bashrc
+->  Add below lines in the end if the bashrc file.
+    # Java 15
+    JAVA_HOME=/opt/java/oracle/jdk-15.0.1
+    PATH=$PATH:$HOME/bin:$JAVA_HOME/bin
+    export JAVA_HOME
+    export PATH
 
 
 https://java.tutorials24x7.com/blog/how-to-install-java-15-on-ubuntu-20-04-lts
