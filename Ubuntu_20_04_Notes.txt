@@ -1,3 +1,9 @@
+Install updates
+---------------
+Open the Update Manager by pressing ‘Alt+F2’, then enter ‘update-manager’ and hit Enter.
+
+
+
 Install Java 15
 ---------------
 
