@@ -1,3 +1,8 @@
+-> Current flows, resistance resists, voltage pushes.
+
+
+Resources
+----------
 
 1. Electronic components videos :
     -> https://www.youtube.com/watch?v=6Maq5IyHSuc&t=309s
@@ -12,10 +17,15 @@
     -> https://www.youtube.com/channel/UCi6ZqREHDIx2xLrCRkrRS0w/videos
     
 4. Blogs in electric circuits
-    -> https://www.build-electronic-circuits.com/build-blinking-light-circuit/
+    -> https://www.build-electronic-circuits.com/build-blinking-light-circuit/ 
+    -> https://www.build-electronic-circuits.com/how-to-learn-electronics/   -- good one
     -> https://ohmify.com/
     -> https://electronicsclub.info/
     
 
 5. http://www.circuitbasics.com/555-timer-basics-astable-mode/
    http://www.555-timer-circuits.com/flashing-led.html
+   
+   
+   
+   
