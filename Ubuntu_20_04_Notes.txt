@@ -55,4 +55,8 @@ Install NodeJS
    ojet help
    ojet --version
 -> Install Visual Studio Code
+-> https://code.visualstudio.com/download
+   
+   sudo cp /home/anveshan/Downloads/code-stable-x64-1608137260.tar.gz .
+   sudo tar -xvf code-stable-x64-1608137260.tar.gz
 
