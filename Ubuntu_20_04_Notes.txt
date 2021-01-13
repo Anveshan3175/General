@@ -28,3 +28,19 @@ Install Java 15
 
 https://java.tutorials24x7.com/blog/how-to-install-java-15-on-ubuntu-20-04-lts
 ------------------------------------------------------------
+
+Install NodeJS
+--------------
+-> Download tar from https://nodejs.org/en/
+   cd /opt
+   sudo cp /home/anveshan/Downloads/node-v14.15.4-linux-x64.tar.xz  .
+   sudo tar -xJvf node-v14.15.4-linux-x64.tar.xz
+   gedit ~/.profile
+-> Add below lines
+   export NODEJS_HOME=/opt/node-v14.15.4-linux-x64/bin
+   export PATH=$NODEJS_HOME:$PATH
+-> refresh profiles
+   >> . ~/.profile
+-> Check Node version
+   node -v
+
