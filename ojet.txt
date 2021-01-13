@@ -4,6 +4,8 @@
 -> As web browsers have become more powerful and are able to handle more complicated calculations, client-side frameworks are starting to become more popular.
 -> The server becomes responsible only for serving the main application file on initial load, subsequent module loading and API calls for data.
 -> The client therefore is responsible for processing and running the code locally.
+-> The benefits of this kind of architecture are massive for enterprise applications, the speed of interactivity being most noticeable, but also the scalability. 
+-> Servers no longer have to be monolithic to handle the processing of hundreds or thousands of concurrent users.
 
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
