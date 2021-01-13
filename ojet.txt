@@ -43,7 +43,15 @@ ojet --version
 ojet serve  
 launches -> http://localhost:8000/
 
+// Create softlinks in ubuntu
+68
 
+I had the same problem; here are the commands to fix it:
+
+sudo ln -s /usr/local/bin/node /usr/bin/node
+sudo ln -s /usr/local/lib/node /usr/lib/node
+sudo ln -s /usr/local/bin/npm /usr/bin/npm
+sudo ln -s /usr/local/bin/node-waf /usr/bin/node-waf
 
 ----------------
 https://docs.oracle.com/en/middleware/developer-tools/jet/9/tutorials.html
