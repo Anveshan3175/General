@@ -47,4 +47,11 @@ Install NodeJS
    gedit ~/.bashrc
    export NODEJS_HOME=/opt/node-v14.15.4-linux-x64/bin
    export PATH=$NODEJS_HOME:$PATH
+-> Create soft links
+   sudo ln -s /opt/node-v14.15.4-linux-x64/bin/npm /usr/bin/npm
+   sudo ln -s /opt/node-v14.15.4-linux-x64/bin/node /usr/bin/node
+   
+-> To check if OJET installation is successful run below
+   ojet help
+   ojet --version
 
