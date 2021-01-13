@@ -60,3 +60,5 @@ Install NodeJS
    sudo cp /home/anveshan/Downloads/code-stable-x64-1608137260.tar.gz .
    sudo tar -xvf code-stable-x64-1608137260.tar.gz
 
+-> Start the Visual Code
+   /opt/VSCode-linux-x64/bin/code
