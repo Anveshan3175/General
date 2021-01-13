@@ -6,6 +6,8 @@
 -> The client therefore is responsible for processing and running the code locally.
 -> The benefits of this kind of architecture are massive for enterprise applications, the speed of interactivity being most noticeable, but also the scalability. 
 -> Servers no longer have to be monolithic to handle the processing of hundreds or thousands of concurrent users.
+-> Choose a technology that runs the application on the client, mitigating the need for a round-trip to the server every time a change occurs on the page.
+-> By running the application on the client, it opens up the potential for a faster, fluid, and more responsive experience for users
 
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
