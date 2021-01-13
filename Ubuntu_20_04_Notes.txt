@@ -54,4 +54,5 @@ Install NodeJS
 -> To check if OJET installation is successful run below
    ojet help
    ojet --version
+-> Install Visual Studio Code
 
