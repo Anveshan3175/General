@@ -43,4 +43,8 @@ Install NodeJS
    >> . ~/.profile
 -> Check Node version
    node -v
+>> Add to bash
+   gedit ~/.bashrc
+   export NODEJS_HOME=/opt/node-v14.15.4-linux-x64/bin
+   export PATH=$NODEJS_HOME:$PATH
 
