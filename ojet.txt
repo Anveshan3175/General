@@ -1,1 +1,193 @@
+---Setting up Scene For OJET
+-> A lot of existing enterprise applications have been developed with the traditional server-side rendering, and more recently the sort of problems 
+   I’ve just described have caused a rethink in the way that web technologies are being developed. 
+-> As web browsers have become more powerful and are able to handle more complicated calculations, client-side frameworks are starting to become more popular.
+-> The server becomes responsible only for serving the main application file on initial load, subsequent module loading and API calls for data.
+-> The client therefore is responsible for processing and running the code locally.
 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Questions ?
+
+1. Difference between knockout vs ojs/ojknockout ?
+2. In require, what is "ojs/...."  .. Where is "ojs" defined ?.. main.js or which router ?
+3. this.selectVal = ko.observable('CH');  'CH' is just one value in Array data. If that is made observable, then is whole select observable ?
+   --> Looks like DEFAULT select value
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+oraclejet.org
+http://wpad/wpad.dat
+
+node -v
+
+npm config get proxy
+npm config get https-proxy
+
+proxies = "PROXY www-proxy-idc.in.oracle.com:80; PROXY www-proxy-lon.uk.oracle.com:80; DIRECT;";
+npm config set proxy http://www-proxy-idc.in.oracle.com:80
+npm config set https-proxy https://www-proxy-idc.in.oracle.com:80
+
+npm install -g @oracle/ojet-cli
+
+npm config rm proxy
+npm config rm https-proxy
+
+npm install -g @oracle/ojet-cli
+ojet help
+ojet --version
+
+ojet serve  
+launches -> http://localhost:8000/
+
+
+
+----------------
+https://docs.oracle.com/en/middleware/developer-tools/jet/9/tutorials.html
+https://www.oracle.com/webfolder/technetwork/jet/jetCookbook.html
+http://localhost:8000/
+----------------
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Node js
+--> Node.js is an open-source, cross-platform JavaScript runtime environment that executes JavaScript code without a web browser
+--> The Oracle JET command-line interface runs under the Node.js environment (version 8.x or later required) and 
+	executes Oracle JET tooling commands in the ojet-cli package.
+--> The Oracle JET web application has one define() method for each module. 
+--> The entire application has only one require() method	
+--> Oracle JET supports the Model-View-ViewModel (MVVM) architectural design pattern.
+--> In MVVM, 
+	-> The Model represents the application data, and 
+	-> The View is the presentation of the data. 
+    -> The ViewModel exposes data from the Model to the view and maintains the application's state.
+	(ref :  https://docs.oracle.com/middleware/jet410/jet/developer/GUID-293CB342-196F-4FC3-AE69-D1226A025FBB.htm#JETDG113)
+	ViewModel -> knockout.js
+	Model -> JET common model
+	View -> Jquery, JET UI, Hammer, SASS
+	
+-->	The Oracle JET Common Model and Collection Application Programming Interface (API) implements the model layer. 
+	The API includes the following JavaScript objects:
+
+    -> oj.Model: Represents a single record data from a data service such as a RESTful web service
+    -> oj.Collection: Represents a set of data records and is a list of oj.Model objects of the same type
+    -> oj.Events: Provides methods for event handling
+    -> oj.KnockoutUtils: Provides methods for mapping the attributes in an oj.Model or oj.Collection object to Knockout observables for use 
+	   with component view models.
+
+--> Knockout takes care of updating the DOM if data changes on behalf of the developer	
+--> Automatic UI refresh : if we update the data for a UI component in code, Knockout will automatically refresh the UI component's data for us.
+--> "data-bind" attributes are how Knockout lets you declaratively associate viewmodel properties with DOM elements
+
+--> Observables
+    -> Knockout has a concept of observables - these are properties that automatically  issue notifications whenever their value changes.
+	   Things stay in sync because of automatic dependency tracking
+	
+	view model without observable
+	
+	function AppViewModel() {
+		this.firstName = "Bert";
+		this.lastName = "Bertington";
+	}
+	When you edit one of those text boxes, it does update the underlying viewmodel data. But because the viewmodel properties are just plain 
+	JavaScript strings, they have no way of notifying anybody that they've changed, so the UI stays static.
+
+	view model made observable
+    function AppViewModel() {
+       this.firstName = ko.observable("Bert");
+       this.lastName = ko.observable("Bertington");
+    }	
+	
+	When you edit one of those text boxes, the underlying viewmodel data is being updated when you edit, 
+	and ALSO all associated UI is updating in sync with it too
+	
+--> Write function in the viewmodel to implement behavior	
+
+--> knockout -> You can implement arbitrarily sophisticated behaviors just by updating the viewmodel object. You don't have to worry about which 
+    DOM elements need to be changed/added/removed - the framework can take care of synchronizing things for you.
+	
+--> Because the meal property is an observable, it's important to invoke meal() as a function (to obtain its current value) before attempting to read sub-properties. 
+    In other words, write meal().price, not meal.price.
+	
+--> For efficiency, Knockout tracks what has changed in your viewmodel, and performs a minimal set of DOM updates to match. This means you can scale 
+	up to very large or sophisticated UIs, and it can remain snappy and responsive even on low-end mobile devices.
+
+--> The jQuery getJSON() method uses a provided URL to read data from a local JSON document.You can then push the data into an Oracle JET oj.arraydataprovider object and bind the data provider to an observable	
+
+--> main.js provides the entry point into application. The "require" block in main.js is like "public static void main" in java. The enrtry point.
+    main.js is loaded by index.html
+
+--> Loading of files in JET is delegated to Require.js. It does lazy loading.AMD
+
+--> The modules mentioned in the require block are needed by application and loaded at the start of application.
+
+--> In the OJET application, there is one "require" block and a "define" block for each module. Define block enables lazy loading. Require block loads 
+    at the begining of application.
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+RequireJS
+
+--> RequireJS is a JavaScript library that is used for loading in JavaScript files. It implements a specification called 
+	AMD - which stands for Asynchronous Module Definition.
+	
+--> Challenges while loading libraries 
+    - We have to be careful when there are lot many libraries
+	- Dependencies have to be loaded, else there will be errors
+	- The orader of loading is important
+	
+--> RequireJS solves the preceding problems, as it takes care of 
+	- loading in the JavaScript libraries
+	- ensures that they are loaded in the correct order
+	- loads when they are needed. (lazy loading ??)
+
+--> A module in RequireJS is a scoped object and is not available in the global namespace. Hence, global namespace will not be polluted. 
+	RequireJS syntax allows to load modules faster without worrying about keeping track of the order of dependencies. You can load multiple versions 
+	of the same module in the same page.
+	
+--> Module is defined using the define() function; the same function is used for loading the module as well.
+
+	Module as simple Name/Value pair 
+	-------------------------------
+	define({
+		state: "karnataka",
+		city: "bangalore"
+	});
+	
+	
+	Module as function
+	------------------
+	define(function () {
+   //Do setup work here
+		return {
+		  state: "karnataka",
+		  city: "bangalore"
+		}
+	});
+	
+	
+	Module as Function with Dependencies and name
+	--------------------------------------------
+	define("testFunction", ["./mnc", "./startup"], 
+	function(mnc, startup) {
+        
+		  return {
+			 state: "karnataka",
+			 city: "bangalore",
+		  
+			 addCompany: function() {
+				mnc.decrement(this);
+				startup.add(this);
+			 }
+		  }
+	   }
+	);
+	1. First argument is the name of module
+	2. Second argument is the list of dependancies 
+	3. Third argument - defining function has arguments as return values of dependancies in that order.
+					  - This is the code that will be running once all the dependencies are loaded.
+	
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+VBCS
