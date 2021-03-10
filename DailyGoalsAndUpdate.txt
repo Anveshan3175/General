@@ -1,4 +1,8 @@
 Electronics
+1. Raspberri Pi
+2. Raspberri Pico
+3. Arduino
 
 JavaScript
+1. Node Js
 
