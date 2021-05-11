@@ -62,3 +62,5 @@ Install NodeJS
 
 -> Start the Visual Code
    /opt/VSCode-linux-x64/bin/code
+   
+-> Download postman from its website. Extract tar file and run the arrow file. Then you can see postman on browser top
