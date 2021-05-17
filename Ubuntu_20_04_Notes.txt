@@ -64,3 +64,6 @@ Install NodeJS
    /opt/VSCode-linux-x64/bin/code
    
 -> Download postman from its website. Extract tar file and run the arrow file. Then you can see postman on browser top
+
+-> Create react js project 
+   npx create-react-app my-app    (reate-react-app is routine that creates app not node. Node needs to install it first)
