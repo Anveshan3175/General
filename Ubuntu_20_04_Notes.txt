@@ -67,3 +67,4 @@ Install NodeJS
 
 -> Create react js project 
    npx create-react-app my-app    (reate-react-app is routine that creates app not node. Node needs to install it first)
+   npm start
