@@ -76,3 +76,4 @@ Install NodeJS
    
 -> Check python version in ubuntu ?   
    > python3 --version
+   > python3   // Starts python interpreter
