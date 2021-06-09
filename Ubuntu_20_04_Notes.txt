@@ -70,3 +70,9 @@ Install NodeJS
 -> Create react js project 
    npx create-react-app my-app    (reate-react-app is routine that creates app not node. Node needs to install it first)
    npm start
+   
+-> Ubuntu 20.04 has Python 3.8.2 as the default version. Python 2.7 has been moved to universe and is not included 
+   by default in any new installs.
+   
+-> Check python version in ubuntu ?   
+   > python3 --version
