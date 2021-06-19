@@ -9,6 +9,7 @@ sudo apt-get install git
 Set Up Git:
 git config --global user.name "Your Name"
 git config --global user.email "youremail@domain.com"
+git config --global user.username Anveshan3175
 Create a repository in the Github without readme.md, then you will see below commands
     echo "# TestGIT" >> README.md
     git init
@@ -280,3 +281,11 @@ Use projects from Github in eclipse
           -> Eclipse will ask for remote repository details. Give URI as project repo from git.This will populate other details
 2. Open terminal and go to /home/<username>/gitworkspace
 3. git init   (It will have readme)
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Anveshan3175/reactjs.git
+git push -u origin main
