@@ -151,6 +151,7 @@ Node js
    > ojet create  sfl --template=basic
    > cd sfl
    > ojet create component sfl-button
+   Edit the sfl/js/appController.js' and add sfl-button/loader'
    > ojet package component anvdemo-name-badge
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
