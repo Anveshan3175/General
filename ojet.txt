@@ -148,7 +148,9 @@ Node js
 
 --> Custom Components
    Command to create Component 
-   > ojet create  anvdemo-name-badge --template=basic
+   > ojet create  sfl --template=basic
+   > cd sfl
+   > ojet create component sfl-button
    > ojet package component anvdemo-name-badge
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
