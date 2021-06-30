@@ -146,6 +146,10 @@ Node js
 --> In the OJET application, there is one "require" block and a "define" block for each module. Define block enables lazy loading. Require block loads 
     at the begining of application.
 
+--> Custom Components
+   Command to create Component 
+   > ojet create  my-web-component-name --template=basic
+   > ojet package component my-web-component-name
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 RequireJS
