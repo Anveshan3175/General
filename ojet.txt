@@ -148,8 +148,8 @@ Node js
 
 --> Custom Components
    Command to create Component 
-   > ojet create  my-web-component-name --template=basic
-   > ojet package component my-web-component-name
+   > ojet create  anvdemo-name-badge --template=basic
+   > ojet package component anvdemo-name-badge
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 RequireJS
