@@ -122,4 +122,11 @@ Install NodeJS
    > echo $ANDROID_HOME
    -> Correct Android SDK path can be found in Android Studio "Preferences" dialog, 
       under Appearance & Behavior → System Settings → Android SDK.
+      
+Install watchman https://installati.one/ubuntu/20.04/watchman/
+----------------
+> sudo apt-get update
+> sudo apt-get -y install watchman
+> watchman --version
+
 
