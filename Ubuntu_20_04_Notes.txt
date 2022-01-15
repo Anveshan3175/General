@@ -129,4 +129,5 @@ Install watchman https://installati.one/ubuntu/20.04/watchman/
 > sudo apt-get -y install watchman
 > watchman --version
 
-
+----Start Android program ------------------
+1. open the
