@@ -134,7 +134,7 @@ Install watchman https://installati.one/ubuntu/20.04/watchman/
 2. open AwesomeProject - cd code/react_native/AwesomeProject/
 3. Make changes and include in the index.js
 4. Open the Android studio and run the simulator
-4.1 > cd react_native/AwesomeProject/  (go to project folder)
+4.1 > cd code/react_native/AwesomeProject/  (go to project folder)
 5. > npx react-native start
 6. > npx react-native run-android
 7. make changes and click r to reload in terminal 
