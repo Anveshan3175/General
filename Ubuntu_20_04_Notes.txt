@@ -138,3 +138,24 @@ Install watchman https://installati.one/ubuntu/20.04/watchman/
 5. > npx react-native start
 6. > npx react-native run-android
 7. make changes and click r to reload in terminal 
+
+---------------------------------------------
+Install Git with Apt :
+sudo apt-get update
+sudo apt-get install git
+
+Set Up Git:
+git config --global user.name "Your Name"
+git config --global user.email "youremail@domain.com"
+git config --global user.username Anveshan3175
+
+No add repositary in github 
+> in github 'reactnative'
+> cd /home/anveshan/code
+> git clone https://github.com/Anveshan3175/reactnative.git
+Above command will create "reactnative" in cd /home/anveshan/code
+> cd reactnative
+> git init
+> git status
+>
+-----------------------------------------------
