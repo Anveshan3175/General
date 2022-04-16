@@ -1,9 +1,8 @@
-Electronics
-1. Raspberri Pi
-2. Raspberri Pico
-3. Arduino
-
-JavaScript
-1. Node Js
-2. OJET -> Practise cookbook
-
+Things to be learnt
+> Raspberri pie
+> Python and project
+> Data strucutures from here - https://www.scaler.com/topics/data-structures
+> Java -- interview prep
+> J2EE , Spring , Hibernate
+> VBCS, OJET
+> Node and React JS
