@@ -1,8 +1,14 @@
 Things to be learnt
-> Raspberri pie
+> Raspberri pi
 > Python and project
 > Data strucutures from here - https://www.scaler.com/topics/data-structures
 > Java -- interview prep
 > J2EE , Spring , Hibernate
 > VBCS, OJET
 > Node and React JS
+
+----------------------------------------------------------------------------------
+>> Java 
+  - Setup j2ee eclipse
+  - Read java doc and prep interview notes
+  - REad J2ee doc and prep interview notes
