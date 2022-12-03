@@ -4,6 +4,7 @@ User Name : Anveshan3175/Nan123du
 Windows installation
 git config --global user.email "akunduru4@gmail.com"
 git config --global user.username Anveshan3175
+Go to folder
 git clone https://github.com/Anveshan3175/JavaTraining.git
 
 **************************************************************************************
