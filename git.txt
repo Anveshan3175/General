@@ -1,4 +1,4 @@
-User Name : Anveshan3175/Katrinakaif1
+User Name : Anveshan3175/Nan123du
 
 **************************************************************************************
 https://www.siteground.com/tutorials/git/commands.htm
@@ -8,7 +8,7 @@ sudo apt-get install git
 
 Set Up Git:
 git config --global user.name "Your Name"
-git config --global user.email "youremail@domain.com"
+git config --global user.email "akunduru4@gmail.com"
 git config --global user.username Anveshan3175
 Create a repository in the Github without readme.md, then you will see below commands
     echo "# TestGIT" >> README.md
