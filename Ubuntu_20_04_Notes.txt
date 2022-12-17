@@ -67,6 +67,15 @@ Install NodeJS
 -> Start the Visual Code
    /opt/VSCode-linux-x64/bin/code
    
+-> upgrade Visual Code
+   Download the latest version as recomended by VS
+   Go to /opt/ folder as sudo
+   cd /opt
+   copy the latest
+   sudo cp /home/anveshan/Downloads/code-stable-x64-1608137260.tar.gz .
+   sudo tar -xvf code-stable-x64-1608137260.tar.gz
+   
+   
 -> Download postman from its website. Extract tar file and run the arrow file. T
    -/home/anveshan/Documents/Postman-linux-x64-8.5.1/Postman/POstman file with arrow. Double Click
 
