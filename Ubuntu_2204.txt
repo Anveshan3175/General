@@ -5,3 +5,8 @@
 > gedit /etc/default/grub
 > GRUB_CMDLINE_LINUX_DEFAULT="quiet splash libata.noacpi=1"
 > update-grub
+
+2) Sound is not working
+
+> sudo touch /usr/share/pipewire/media-session.d/with-pulseaudio
+> systemctl --user restart pipewire-session-manager
