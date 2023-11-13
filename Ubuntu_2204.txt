@@ -10,3 +10,19 @@
 
 > sudo touch /usr/share/pipewire/media-session.d/with-pulseaudio
 > systemctl --user restart pipewire-session-manager
+
+3) Install java 21
+---------------
+-> open  from https://www.oracle.com/java/technologies/downloads/
+-> Download https://download.oracle.com/java/21/latest/jdk-21_linux-x64_bin.tar.gz (sha256)
+-> sudo mkdir -p /opt/java/oracle
+-> cp /home/anveshan/Downloads/jdk-21.0.1_linux-x64_bin.tar.gz .
+-> sudo tar -xzvf jdk-21.0.1_linux-x64_bin.tar.gz
+-> cd ~
+-> gedit .bashrc
+->  Add below lines in the end if the bashrc file.
+    # Java 21
+    JAVA_HOME=/opt/java/oracle/jdk-21.0.1
+    PATH=$PATH:$HOME/bin:$JAVA_HOME/bin
+    export JAVA_HOME
+    export PATH
