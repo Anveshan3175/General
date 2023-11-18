@@ -28,3 +28,9 @@
     export PATH
 -> jshell
 -> System.out.println("Hello")
+
+4) Install Thonny
+-----------------
+> sudo apt install thonny
+
+
