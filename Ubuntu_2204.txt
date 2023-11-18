@@ -32,5 +32,6 @@
 4) Install Thonny
 -----------------
 > sudo apt install thonny
+> thonny
 
 
