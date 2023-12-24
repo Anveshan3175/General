@@ -28,6 +28,7 @@
     export PATH
 -> jshell
 -> System.out.println("Hello")
+-> /opt/eclipse/eclipse
 
 4) Install Thonny
 -----------------
