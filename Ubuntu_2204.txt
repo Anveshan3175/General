@@ -35,4 +35,11 @@
 > sudo apt install thonny
 > thonny
 
+5) Install Scratch
+------------------
+https://installati.one/install-scratch-ubuntu-22-04/
+> sudo apt-get update
+> sudo apt-get -y install scratch
+> scratch
+
 
