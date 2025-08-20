@@ -43,3 +43,10 @@ https://installati.one/install-scratch-ubuntu-22-04/
 > scratch
 
 
+docker
+------
+/home/anveshan/n8n
+docker compose up -d
+docker ps
+http://localhost:5678/  Welcome1
+
