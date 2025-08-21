@@ -50,3 +50,22 @@ docker compose up -d
 docker ps
 http://localhost:5678/  Welcome1
 
+How to set open ai key in mac pro 3 and run open ai program
+-----------------------------------------------------
+> cd ~
+> nano ~/.zshrc
+   export OPENAI_API_KEY="your_api_key_here"
+   export OPENAI_API_KEY="sk-proj-xvWUKgMWKPHi55zfeBGeAvFsarNwVOAApulkiYFfQdPE4LRnMhDfgNyYUPEzejFx_oKw-  IOjKST3BlbkFJcuZJJ9XcDgtzDDOZ07s6riYesxIyVvm91E_-uKpBzASpM1c6RU5ZLe_yauQUd6F_HnAbpDgmEA"
+> source ~/.zshrc
+
+When you install python3, pip3 get installed
+> pip3 install openai
+> python3
+> from openai import OpenAI
+> client = OpenAI()
+> response = client.chat.completions.create(
+    model="gpt-4o-mini",   # You can use "gpt-4o-mini", "gpt-4o", or "gpt-3.5-turbo"
+    messages=[{"role": "user", "content": "Write a short poem about the sun."}]
+)
+> print(response.choices[0].message.content)
+----------
