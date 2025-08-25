@@ -1,1 +1,12 @@
-
+grep pip3 ~/.zsh_history
+pip3 --version
+pip3 install openai
+pip3 install streamlit
+pip3 install lanchain
+pip3 install langchain
+pip3 install langchain-community
+pip3 install wikipedia
+ppip3 install numexpr
+pip3 install numexpr
+history | grep pip3
+pip install --upgrade openai
