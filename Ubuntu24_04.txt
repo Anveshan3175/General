@@ -14,3 +14,10 @@ To check operating system
 
 update and upgrade
 > sudo apt update && sudo apt upgrade -y
+
+pip install  (However you cannot use pip for all s/ws use pipx)
+> sudo apt install python3-pip
+> sudo apt install pipx
+
+jupiterlab installation
+> pipx install jupyterlab
