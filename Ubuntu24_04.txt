@@ -1,0 +1,16 @@
+Installation of 2404 in desktop
+
+1. Download Ubuntu 24 LTS from website. Do it in Apple M3 Pro. "Etcher for macOS (arm64)".
+2. Download Balena Etcher in Mac.
+3. Plug in formatted USB
+4. Open Etcher, select USB, select downloaded ubuntu iso and flash it.
+5. Remove the USB and plug it in desktop.
+6. Start the desktop and keep pressing F2/F12/F10 to enter Boot menu.
+7. Select bootmenu and in boot menu select to install Ubuntu from USB.Slect - UEFI: SanDisk
+8. Complete installation as guided in installation UI
+
+To check operating system
+> lsb_release -a
+
+update and upgrade
+> sudo apt update && sudo apt upgrade -y
