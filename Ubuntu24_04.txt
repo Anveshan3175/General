@@ -26,4 +26,4 @@ jupiterlab installation
 --------------------------
 > pipx install jupyterlab
 > pipx ensurepath
-> pipx run jupyterlab
+> jupyter-lab  ## opens jupiter in browser     
