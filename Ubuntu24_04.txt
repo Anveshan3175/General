@@ -25,4 +25,5 @@ pip install  (However you cannot use pip for all s/ws use pipx)
 jupiterlab installation
 --------------------------
 > pipx install jupyterlab
+> pipx ensurepath
 > pipx run jupyterlab
