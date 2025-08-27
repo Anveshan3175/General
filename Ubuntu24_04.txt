@@ -1,5 +1,5 @@
 Installation of 2404 in desktop
-
+--------------------------
 1. Download Ubuntu 24 LTS from website. Do it in Apple M3 Pro. "Etcher for macOS (arm64)".
 2. Download Balena Etcher in Mac.
 3. Plug in formatted USB
@@ -10,14 +10,19 @@ Installation of 2404 in desktop
 8. Complete installation as guided in installation UI
 
 To check operating system
+--------------------------
 > lsb_release -a
 
 update and upgrade
+--------------------------
 > sudo apt update && sudo apt upgrade -y
 
 pip install  (However you cannot use pip for all s/ws use pipx)
+--------------------------
 > sudo apt install python3-pip
 > sudo apt install pipx
 
 jupiterlab installation
+--------------------------
 > pipx install jupyterlab
+> pipx run jupyterlab
