@@ -73,8 +73,14 @@ services:
 
 > mkdir -p ~/n8n/n8n_data
 > sudo chown -R 1000:1000 ~/n8n/n8n_data
+> sudo groupadd docker
+> sudo usermod -aG docker $USER
+> newgrp docker
 > docker compose up -d
 > docker ps
+
+
+
 
 
 
