@@ -50,3 +50,33 @@ install n8n using docker
 > sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 > docker compose version
 
+#  Install n8n in docker
+> mkdir -p ~/n8n
+> cd ~/n8n
+> nano docker-compose.yml
+
+version: '3.8'
+
+services:
+  n8n:
+    image: n8nio/n8n:latest
+    restart: always
+    ports:
+      - "5678:5678"
+    volumes:
+      - ./n8n_data:/home/node/.n8n
+    environment:
+      - GENERIC_TIMEZONE=Asia/Kolkata
+      - N8N_BASIC_AUTH_ACTIVE=true
+      - N8N_BASIC_AUTH_USER=admin
+      - N8N_BASIC_AUTH_PASSWORD=admin
+
+> mkdir -p ~/n8n/n8n_data
+> sudo chown -R 1000:1000 ~/n8n/n8n_data
+> docker compose up -d
+> docker ps
+
+
+
+
+
