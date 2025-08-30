@@ -78,6 +78,8 @@ services:
 > newgrp docker
 > docker compose up -d
 > docker ps
+http://localhost:5678
+akunduru4@gmail.com/ Nan123du@
 
 
 
