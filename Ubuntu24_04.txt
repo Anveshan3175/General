@@ -82,6 +82,35 @@ http://localhost:5678
 akunduru4@gmail.com/ Nan123du@
 
 
+Integrate slack with n8n
+------------------------
+1. Create free slack account with your google mail.
+2. Go to apps website to create slack app. https://api.slack.com/apps/A09DMKKJYSC
+3. Give name as n8n Integration
+4. Click on OAuth & Permissions
+5. In User Token Scopes add "admin" scope
+6. Go to Scopes. Add below scopes - 
+    app_mentions:read
+    channels:read
+    chat:write
+    conversations.connect:read
+    conversations.connect:write
+    groups:read
+    im:read
+    mpim:read
+    users:read
+7. In the "Basic Information" tab, in "Display Information" section give short description and Background color.
+8. Save Changes
+9. Click on Install 
+10. Click on OAuth & Permissions -> OAuth Tokens -> Install to AnveshanWS - xoxb- token
+11. After installation, you’ll see a "Bot User OAuth Token" That you need to use in n8n
+    a. In n8n, add a Slack node.
+    b. Under Authentication, choose Access Token.
+    c. Paste your xoxb- token
+12. In the Basic Information, you have Signing Secret, use that in n8n. n8n asks for Access Token and Signing Secret.
+
+
+
 
 
 
